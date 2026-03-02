@@ -1,0 +1,232 @@
+@import '../../app.scss';
+
+.upload {
+  background: $color-bg;
+  min-height: 100vh;
+  padding-bottom: 120px;
+
+  &__notice {
+    background: #FFF8E7;
+    border-left: 4px solid $color-secondary;
+    padding: $space-sm $space-md;
+    margin-bottom: $space-sm;
+
+    &-text {
+      font-size: $font-sm;
+      color: #7D5A00;
+      line-height: 1.5;
+    }
+  }
+
+  &__section {
+    background: $color-card;
+    padding: $space-md;
+    margin-bottom: $space-sm;
+  }
+
+  &__section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $space-sm;
+  }
+
+  &__label {
+    display: block;
+    font-size: $font-md;
+    font-weight: 600;
+    color: $color-text;
+    margin-bottom: $space-sm;
+  }
+
+  &__required {
+    color: $color-danger;
+  }
+
+  &__input {
+    width: 100%;
+    padding: $space-sm $space-md;
+    border: 2px solid $color-border;
+    border-radius: $radius-sm;
+    font-size: $font-md;
+    color: $color-text;
+    background: $color-bg;
+
+    &:focus {
+      border-color: $color-primary;
+    }
+  }
+
+  // ── 选项 Chips ─────────────────────────────
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-xs;
+  }
+
+  &__chip {
+    padding: 8px 20px;
+    border-radius: $radius-full;
+    background: $color-bg;
+    font-size: $font-sm;
+    color: $color-text-sub;
+    border: 2px solid $color-border;
+    transition: all 0.15s;
+
+    &--active {
+      background: $color-primary-light;
+      color: $color-primary;
+      border-color: $color-primary;
+      font-weight: 600;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  // ── 食材行 ─────────────────────────────────
+  &__ingredient-row {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    margin-bottom: $space-sm;
+  }
+
+  &__ingredient-name {
+    flex: 2;
+    padding: $space-sm;
+    border: 2px solid $color-border;
+    border-radius: $radius-sm;
+    font-size: $font-md;
+    background: $color-bg;
+  }
+
+  &__ingredient-amount {
+    flex: 1;
+    padding: $space-sm;
+    border: 2px solid $color-border;
+    border-radius: $radius-sm;
+    font-size: $font-md;
+    background: $color-bg;
+  }
+
+  &__remove-btn {
+    font-size: $font-lg;
+    color: $color-text-dis;
+    padding: 4px 8px;
+    flex-shrink: 0;
+
+    &:active {
+      color: $color-danger;
+    }
+  }
+
+  // ── 步骤行 ─────────────────────────────────
+  &__step-row {
+    display: flex;
+    align-items: flex-start;
+    gap: $space-sm;
+    margin-bottom: $space-md;
+  }
+
+  &__step-num {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 4px;
+
+    &-text {
+      color: $color-white;
+      font-size: $font-md;
+      font-weight: 700;
+    }
+  }
+
+  &__step-textarea {
+    flex: 1;
+    padding: $space-sm;
+    border: 2px solid $color-border;
+    border-radius: $radius-sm;
+    font-size: $font-md;
+    background: $color-bg;
+    min-height: 80px;
+    line-height: 1.6;
+  }
+
+  // ── 添加按钮 ───────────────────────────────
+  &__add-btn {
+    padding: 6px 16px;
+    border-radius: $radius-full;
+    background: $color-primary-light;
+    border: 1px dashed $color-primary;
+
+    &:active {
+      opacity: 0.7;
+    }
+
+    &-text {
+      font-size: $font-sm;
+      color: $color-primary;
+    }
+  }
+
+  // ── 底部操作 ───────────────────────────────
+  &__actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: $space-sm;
+    padding: $space-sm $space-md;
+    background: $color-card;
+    border-top: 1px solid $color-border;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  &__draft-btn {
+    flex: 1;
+    padding: $space-md;
+    border-radius: $radius-md;
+    border: 2px solid $color-border;
+    text-align: center;
+    background: $color-card;
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &__draft-text {
+    font-size: $font-md;
+    color: $color-text-sub;
+  }
+
+  &__submit-btn {
+    flex: 2;
+    padding: $space-md;
+    border-radius: $radius-md;
+    background: $color-primary;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(255, 107, 53, 0.35);
+    transition: all 0.15s;
+
+    &:active,
+    &--loading {
+      opacity: 0.8;
+      transform: scale(0.98);
+    }
+  }
+
+  &__submit-text {
+    font-size: $font-md;
+    font-weight: 700;
+    color: $color-white;
+  }
+}

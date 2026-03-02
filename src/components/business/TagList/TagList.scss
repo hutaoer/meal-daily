@@ -1,0 +1,32 @@
+@import '../../../app.scss';
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-xs;
+  align-items: center;
+
+  &__item {
+    border-radius: $radius-full;
+    font-weight: 500;
+    transition: opacity 0.15s;
+
+    &--selected {
+      outline: 2px solid currentColor;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &--md &__item {
+    padding: 6px 16px;
+    font-size: $font-sm;
+  }
+
+  &--sm &__item {
+    padding: 4px 12px;
+    font-size: $font-xs;
+  }
+}

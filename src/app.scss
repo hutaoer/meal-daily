@@ -1,0 +1,91 @@
+// 全局样式变量 & reset
+// =====================
+// 设计规范：主橙色 #FF6B35，背景灰 #F7F8FA
+// =====================
+
+// ── 颜色变量 ──────────────────────────────────
+$color-primary:      #FF6B35;
+$color-primary-light:#FFF0EB;
+$color-secondary:    #FFC107;
+$color-text:         #1A1A1A;
+$color-text-sub:     #666666;
+$color-text-dis:     #BBBBBB;
+$color-bg:           #F7F8FA;
+$color-card:         #FFFFFF;
+$color-border:       #EEEEEE;
+$color-white:        #FFFFFF;
+$color-danger:       #FF4D4F;
+$color-success:      #52C41A;
+
+// ── 圆角 ──────────────────────────────────────
+$radius-sm:  8px;
+$radius-md:  12px;
+$radius-lg:  20px;
+$radius-full:999px;
+
+// ── 字体大小（Taro px，编译后转 rpx）──────────
+$font-xs:  20px;
+$font-sm:  24px;
+$font-md:  28px;
+$font-lg:  32px;
+$font-xl:  36px;
+$font-2xl: 44px;
+
+// ── 间距 ──────────────────────────────────────
+$space-xs:  8px;
+$space-sm:  12px;
+$space-md:  16px;
+$space-lg:  24px;
+$space-xl:  32px;
+
+// ── 阴影 ──────────────────────────────────────
+$shadow-sm:  0 2px 8px rgba(0, 0, 0, 0.06);
+$shadow-md:  0 4px 16px rgba(0, 0, 0, 0.10);
+$shadow-lg:  0 8px 32px rgba(0, 0, 0, 0.12);
+
+// ── Reset & 全局 ──────────────────────────────
+page {
+  background-color: $color-bg;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', sans-serif;
+  color: $color-text;
+  font-size: $font-md;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// ── 通用工具类 ────────────────────────────────
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-primary  { color: $color-primary; }
+.text-sub      { color: $color-text-sub; }
+.text-dis      { color: $color-text-dis; }
+.text-sm       { font-size: $font-sm; }
+.text-lg       { font-size: $font-lg; }
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,160 @@
+@import '../../app.scss';
+
+.index {
+  height: 100vh;
+  background: $color-bg;
+
+  // ── 头部 ──────────────────────────────────
+  &__header {
+    background: linear-gradient(135deg, $color-primary 0%, #FF8C4A 100%);
+    padding: $space-md $space-md $space-xl;
+  }
+
+  &__search-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: $radius-full;
+    padding: $space-sm $space-md;
+    margin-bottom: $space-md;
+    gap: $space-sm;
+  }
+
+  &__search-icon {
+    font-size: $font-lg;
+  }
+
+  &__search-placeholder {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: $font-md;
+  }
+
+  // 随机推荐按钮
+  &__random-btn {
+    background: $color-white;
+    border-radius: $radius-lg;
+    padding: $space-md $space-lg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.35);
+    transition: transform 0.15s;
+
+    &:active,
+    &--loading {
+      transform: scale(0.97);
+      opacity: 0.85;
+    }
+  }
+
+  &__random-title {
+    font-size: $font-xl;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: 4px;
+  }
+
+  &__random-sub {
+    font-size: $font-sm;
+    color: $color-text-sub;
+  }
+
+  // ── Section ────────────────────────────────
+  &__section {
+    padding: $space-lg $space-md $space-md;
+  }
+
+  &__section-title {
+    display: block;
+    font-size: $font-lg;
+    font-weight: 700;
+    color: $color-text;
+    margin-bottom: $space-md;
+  }
+
+  // ── 分类横滑 ───────────────────────────────
+  &__categories {
+    display: flex;
+    white-space: nowrap;
+  }
+
+  &__cat-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: $space-md;
+    padding: $space-sm $space-md;
+    border-radius: $radius-md;
+    background: $color-card;
+    box-shadow: $shadow-sm;
+    transition: all 0.15s;
+    flex-shrink: 0;
+
+    &--active {
+      background: $color-primary-light;
+      box-shadow: 0 2px 12px rgba(255, 107, 53, 0.2);
+
+      .index__cat-label {
+        color: $color-primary;
+        font-weight: 600;
+      }
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &__cat-emoji {
+    font-size: 40px;
+    margin-bottom: 4px;
+  }
+
+  &__cat-label {
+    font-size: $font-sm;
+    color: $color-text-sub;
+    white-space: nowrap;
+  }
+
+  // ── 菜谱网格 ───────────────────────────────
+  &__recipe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-md;
+  }
+
+  // ── 骨架屏 ─────────────────────────────────
+  &__skeleton-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-md;
+  }
+
+  &__skeleton-card {
+    height: 280px;
+    border-radius: $radius-md;
+    background: linear-gradient(90deg, #EEEEEE 25%, #F5F5F5 50%, #EEEEEE 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  // ── 底部加载 ────────────────────────────────
+  &__loading-more,
+  &__no-more {
+    display: block;
+    text-align: center;
+    padding: $space-lg;
+    font-size: $font-sm;
+    color: $color-text-dis;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}

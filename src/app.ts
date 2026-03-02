@@ -1,15 +1,18 @@
-import { PropsWithChildren } from 'react'
-import { useLaunch } from '@tarojs/taro'
+import { Component } from 'react'
+import { useUserStore } from './store/useUserStore'
+import { useRecipeStore } from './store/useRecipeStore'
 import './app.scss'
 
-function App({ children }: PropsWithChildren<any>) {
+class App extends Component {
+  componentDidMount() {
+    // 初始化全局状态：从 Storage 还原登录态和收藏/点赞
+    useUserStore.getState().initUser()
+    useRecipeStore.getState().init()
+  }
 
-  useLaunch(() => {
-    console.log('App launched.')
-  })
-
-  // children 是将要会渲染的页面
-  return children
+  render() {
+    return this.props.children
+  }
 }
 
 export default App

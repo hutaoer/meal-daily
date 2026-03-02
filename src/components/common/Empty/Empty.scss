@@ -1,0 +1,24 @@
+@import '../../../app.scss';
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px $space-lg;
+
+  &__icon {
+    font-size: 80px;
+    margin-bottom: $space-md;
+  }
+
+  &__text {
+    font-size: $font-lg;
+    color: $color-text-sub;
+    margin-bottom: $space-xs;
+  }
+
+  &__sub {
+    font-size: $font-sm;
+    color: $color-text-dis;
+  }
+}
