@@ -11,6 +11,7 @@
     "outDir": "lib",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "skipLibCheck": true,
     "strictNullChecks": true,
     "sourceMap": true,
     "baseUrl": ".",
@@ -21,6 +22,7 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "types": ["node", "jest", "react", "webpack-env"],
     "paths": {
       "@/*": ["src/*"]
     }

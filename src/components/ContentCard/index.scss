@@ -1,0 +1,47 @@
+@import '../../styles/tokens';
+
+.content-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 208rpx;
+  padding: 20rpx;
+  background: $c-card;
+  border-radius: $radius-card;
+  @include card-shadow;
+
+  &__info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rpx 0 0 20rpx;
+  }
+
+  &__id {
+    font-size: 20rpx;
+    color: $c-meal;
+    margin-bottom: 8rpx;
+  }
+
+  &__title {
+    font-size: 28rpx;
+    font-weight: 600;
+    color: $c-text;
+    margin-bottom: 8rpx;
+  }
+
+  &__desc {
+    width: 330rpx;
+    font-size: 22rpx;
+    line-height: 34rpx;
+    color: $c-text-weak;
+  }
+
+  &__like {
+    position: absolute;
+    right: 16rpx;
+    bottom: 12rpx;
+  }
+}

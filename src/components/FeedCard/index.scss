@@ -1,0 +1,119 @@
+@import '../../styles/tokens';
+
+.feed-card {
+  overflow: hidden;
+
+  &--banner {
+    width: 560rpx;
+    height: 424rpx;
+    border-radius: $radius-lg;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 32rpx;
+    position: relative;
+    @include banner-shadow;
+  }
+
+  /* coverImgUrl 有值时铺一张线上图，蒙层保证白色文字可读 */
+  &__banner-media {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  &__banner-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__banner-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(28, 16, 10, 0.10) 0%, rgba(28, 16, 10, 0.28) 45%, rgba(28, 16, 10, 0.74) 100%);
+  }
+
+  &__badge,
+  &__banner-title,
+  &__banner-sub,
+  &__banner-meta {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__badge {
+    align-self: flex-start;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 24rpx;
+    padding: 8rpx 16rpx;
+    margin-bottom: 16rpx;
+  }
+
+  &__badge-text {
+    font-size: 20rpx;
+    color: $c-white;
+  }
+
+  &__banner-title {
+    font-size: 40rpx;
+    line-height: 56rpx;
+    font-weight: 700;
+    color: $c-white;
+    margin-bottom: 8rpx;
+  }
+
+  &__banner-sub {
+    font-size: 24rpx;
+    line-height: 38rpx;
+    color: #FCEFE4;
+    margin-bottom: 12rpx;
+  }
+
+  &__banner-meta {
+    font-size: 22rpx;
+    color: #F3D9C8;
+  }
+
+  &--waterfall {
+    width: 332rpx;
+    border-radius: $radius-card;
+    background: $c-card;
+    @include card-shadow;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx;
+  }
+
+  &__type {
+    font-size: 20rpx;
+    color: $c-dish;
+    margin-bottom: 8rpx;
+
+    &--meal {
+      color: $c-meal;
+    }
+  }
+
+  &__title {
+    font-size: 28rpx;
+    font-weight: 600;
+    color: $c-text;
+    line-height: 40rpx;
+    margin-bottom: 8rpx;
+  }
+
+  &__meta {
+    font-size: 20rpx;
+    color: $c-text-weak;
+  }
+}

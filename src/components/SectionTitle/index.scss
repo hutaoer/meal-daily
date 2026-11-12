@@ -1,0 +1,18 @@
+@import '../../styles/tokens';
+
+.section-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    flex-shrink: 0;
+  }
+
+  &__right {
+    font-size: 22rpx;
+    color: $c-text-weak;
+    text-align: right;
+  }
+}

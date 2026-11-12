@@ -1,0 +1,16 @@
+.masonry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__col {
+    width: 332rpx;
+    display: flex;
+    flex-direction: column;
+
+    > view {
+      margin-bottom: 24rpx;
+    }
+  }
+}

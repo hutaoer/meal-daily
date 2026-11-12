@@ -1,0 +1,36 @@
+@import '../../styles/tokens';
+
+.liked-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx;
+  background: $c-card;
+  border-radius: $radius-row;
+
+  &__info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20rpx;
+  }
+
+  &__title {
+    font-size: 26rpx;
+    font-weight: 600;
+    color: $c-text;
+    margin-bottom: 6rpx;
+  }
+
+  &__sub {
+    font-size: 20rpx;
+    color: $c-text-weak;
+  }
+
+  &__heart {
+    font-size: 32rpx;
+    color: $c-primary;
+    flex-shrink: 0;
+  }
+}

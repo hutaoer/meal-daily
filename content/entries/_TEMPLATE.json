@@ -1,0 +1,25 @@
+{
+  "_readme": "复制本文件并改名为 id.json（如 202611131.json），填好后运行 yarn content:sync。下划线开头的字段与文件会被脚本跳过。",
+  "id": "202611131",
+  "date": "2026.11.13",
+  "mealType": "晚餐",
+  "weekday": "周五",
+  "title": "这一餐的标题",
+  "subtitle": "一句话介绍这一餐",
+  "coverKey": "oat",
+  "coverImgUrl": "",
+  "totalMinutes": 30,
+  "servings": 2,
+  "tags": ["家常", "快手"],
+  "note": ["第一段手记。", "第二段手记。"],
+  "dishIds": ["d001", "d002"],
+  "likeCount": 0,
+  "feed": {
+    "_readme": "可选：覆盖首页卡片字段；整个 feed 删掉则自动从上面的实体生成。",
+    "title": "这一餐的标题",
+    "subtitle": "首页卡片上显示的一句话",
+    "meta": "11.13 · 晚餐 · 2 道菜",
+    "tags": ["家常", "快手"],
+    "coverHeight": 330
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "_readme": "pinned 决定首页置顶顺序，第一项就是首页 Banner 第一张；其余录入文件按 date 倒序排在 pinned 之后、内置数据之前。excludeFromFeed 中的文件仍然入库，但不生成首页卡片。改完运行 yarn content:sync。",
+  "pinned": [
+    "entries/202611121.json"
+  ],
+  "excludeFromFeed": []
+}

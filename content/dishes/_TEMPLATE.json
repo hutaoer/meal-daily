@@ -1,0 +1,32 @@
+{
+  "_readme": "复制本文件并改名为 id.json（如 d012.json），填好后运行 yarn content:sync。下划线开头的字段与文件会被脚本跳过。",
+  "id": "d012",
+  "title": "菜名",
+  "description": "一句话描述，列表卡片用",
+  "subtitle": "详情页里稍长一点的一句介绍",
+  "coverKey": "sage",
+  "coverImgUrl": "",
+  "images": ["sage", "oat", "wheat-gold"],
+  "category": "家常快手",
+  "tags": ["家常", "快手"],
+  "duration": 15,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.13",
+  "story": ["这道菜背后的第一段小故事。", "第二段小故事。"],
+  "ingredients": [
+    { "name": "主料", "amount": "1 份" },
+    { "name": "调料", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "第一步做法。" },
+    { "index": 2, "description": "第二步做法。" },
+    { "index": 3, "description": "第三步做法。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "_readme": "可选：覆盖首页卡片字段；整个 feed 删掉则自动从上面的实体生成。",
+    "meta": "15 分钟 · 简单",
+    "coverHeight": 300
+  }
+}

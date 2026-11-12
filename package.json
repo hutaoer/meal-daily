@@ -9,6 +9,9 @@
     "css": "sass"
   },
   "scripts": {
+    "content:sync": "node scripts/sync-content.mjs",
+    "prebuild:weapp": "npm run content:sync",
+    "pretest": "npm run content:sync",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",

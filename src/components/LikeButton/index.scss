@@ -1,0 +1,65 @@
+@import '../../styles/tokens';
+
+.like-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: $c-text-weak;
+
+  &__heart {
+    font-size: 26rpx;
+    line-height: 1;
+    color: $c-text-weak;
+  }
+
+  &__count {
+    font-size: 22rpx;
+    line-height: 1;
+    margin-left: 6rpx;
+    color: $c-text-weak;
+  }
+
+  &--liked {
+    .like-btn__heart,
+    .like-btn__count {
+      color: $c-primary;
+    }
+  }
+
+  // 内容列表卡片右下角：小号透明底
+  &--plain {
+    padding: 8rpx;
+    min-width: 76rpx;
+  }
+
+  // 菜品卡封面右上角：白色圆形底
+  &--circle {
+    width: 52rpx;
+    height: 52rpx;
+    border-radius: 26rpx;
+    background: rgba(255, 255, 255, 0.92);
+
+    .like-btn__heart {
+      font-size: 28rpx;
+    }
+  }
+
+  // 详情页封面右上角：胶囊
+  &--pill {
+    height: 64rpx;
+    padding: 0 24rpx;
+    border-radius: 32rpx;
+    background: rgba(255, 255, 255, 0.94);
+
+    .like-btn__heart {
+      font-size: 30rpx;
+    }
+
+    .like-btn__count {
+      font-size: 24rpx;
+      font-weight: 600;
+      margin-left: 10rpx;
+    }
+  }
+}

@@ -1,13 +1,14 @@
 import { Component } from 'react'
-import { useUserStore } from './store/useUserStore'
-import { useRecipeStore } from './store/useRecipeStore'
+import type { PropsWithChildren } from 'react'
+import { useLikes } from './store/useLikes'
+import { validateMockData } from './services/mock'
 import './app.scss'
 
-class App extends Component {
+class App extends Component<PropsWithChildren> {
   componentDidMount() {
-    // 初始化全局状态：从 Storage 还原登录态和收藏/点赞
-    useUserStore.getState().initUser()
-    useRecipeStore.getState().init()
+    // 从 Storage 还原点赞与头像昵称；数据自检只在开发态打印
+    useLikes.getState().sync()
+    validateMockData()
   }
 
   render() {

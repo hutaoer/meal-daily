@@ -1,0 +1,40 @@
+// 设计 Token：所有尺寸单位为 rpx（设计稿 px × 2），见 PRD §8
+$c-bg: #F8F3EC;
+$c-card: #FFFFFF;
+$c-group: #F2EBDF;
+$c-row: #FAF6EE;
+$c-text: #2A1F14;
+$c-text-sub: #6B5B47;
+$c-text-weak: #9A8A73;
+$c-primary: #E07856;
+$c-primary-soft: #F4A261;
+$c-meal: #C05A3E;
+$c-dish: #6E8C63;
+$c-tag-bg: #EDF2E6;
+$c-border: #E8DCC8;
+$c-white: #FFFFFF;
+
+$radius-lg: 32rpx;
+$radius-card: 28rpx;
+$radius-row: 24rpx;
+$radius-block: 20rpx;
+
+@mixin card-shadow {
+  box-shadow: 0 4rpx 16rpx rgba(69, 80, 68, 0.12);
+}
+
+@mixin banner-shadow {
+  box-shadow: 0 12rpx 32rpx rgba(105, 70, 45, 0.18);
+}
+
+@mixin ellipsis($lines: 1) {
+  overflow: hidden;
+  @if $lines == 1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}

@@ -1,141 +1,60 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import { View, Text, ScrollView, Image } from '@tarojs/components'
+import React, { useState } from 'react'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
-import { getRecipes, getRandomRecipe } from '../../services/recipe.service'
-import { CATEGORY_LIST, CATEGORY_EMOJI, PAGE_SIZE } from '../../utils/constants'
-import RecipeCard from '../../components/business/RecipeCard'
-import Empty from '../../components/common/Empty'
-import type { Recipe } from '../../types/recipe'
-import type { CategoryType } from '../../types/recipe'
+import BannerSwiper from '../../components/BannerSwiper'
+import MasonryFeed from '../../components/MasonryFeed'
+import SectionTitle from '../../components/SectionTitle'
+import EmptyHint from '../../components/EmptyHint'
+import { bannerItems, waterfallItems, feed, SITE_META } from '../../services/mock'
+import type { FeedItem } from '../../types/content'
 import './index.scss'
 
+const pad = (n: number) => String(n).padStart(2, '0')
+
 const Index: React.FC = () => {
-  const [hotRecipes, setHotRecipes] = useState<Recipe[]>([])
-  const [loading, setLoading] = useState(true)
-  const [page, setPage] = useState(1)
-  const [hasMore, setHasMore] = useState(true)
-  const [loadingMore, setLoadingMore] = useState(false)
-  const [randomLoading, setRandomLoading] = useState(false)
-  const [activeCategory, setActiveCategory] = useState<CategoryType | null>(null)
+  const [current, setCurrent] = useState(0)
 
-  const fetchRecipes = useCallback(async (p = 1, category: CategoryType | null = null, append = false) => {
-    if (p === 1) setLoading(true)
-    else setLoadingMore(true)
-    try {
-      const res = await getRecipes({ category: category || undefined, page: p, pageSize: PAGE_SIZE, sortBy: 'hot' })
-      setHotRecipes((prev) => (append ? [...prev, ...res.list] : res.list))
-      setHasMore(res.hasMore)
-      setPage(p)
-    } finally {
-      setLoading(false)
-      setLoadingMore(false)
-    }
-  }, [])
-
-  useEffect(() => {
-    fetchRecipes(1, null)
-  }, [])
-
-  const handleCategoryClick = (cat: CategoryType | null) => {
-    setActiveCategory(cat)
-    fetchRecipes(1, cat)
-  }
-
-  const handleLoadMore = () => {
-    if (!hasMore || loadingMore) return
-    fetchRecipes(page + 1, activeCategory, true)
-  }
-
-  const handleRandom = async () => {
-    if (randomLoading) return
-    setRandomLoading(true)
-    try {
-      const recipe = await getRandomRecipe()
-      if (recipe) {
-        Taro.navigateTo({ url: `/pages/recipe-detail/index?id=${recipe.id}` })
-      }
-    } finally {
-      setRandomLoading(false)
-    }
-  }
-
-  const handleSearch = () => {
-    Taro.navigateTo({ url: '/pages/category/index?focus=1' })
+  const handleTap = (item: FeedItem) => {
+    const url = item.type === 'meal'
+      ? `/pages/meal-detail/index?id=${item.refId}`
+      : `/pages/dish-detail/index?id=${item.refId}`
+    Taro.navigateTo({ url })
   }
 
   return (
-    <ScrollView
-      className='index'
-      scrollY
-      onScrollToLower={handleLoadMore}
-      lowerThreshold={100}
-    >
-      {/* 顶部：搜索 + 随机推荐 */}
-      <View className='index__header'>
-        <View className='index__search-bar' onClick={handleSearch}>
-          <Text className='index__search-icon'>🔍</Text>
-          <Text className='index__search-placeholder'>搜索菜名、食材、标签…</Text>
-        </View>
-        <View className={`index__random-btn ${randomLoading ? 'index__random-btn--loading' : ''}`} onClick={handleRandom}>
-          <Text className='index__random-title'>🎲 今日吃什么？</Text>
-          <Text className='index__random-sub'>{randomLoading ? '随机中…' : '点击随机推荐'}</Text>
-        </View>
-      </View>
-
-      {/* 分类横滑 */}
-      <View className='index__section'>
-        <Text className='index__section-title'>主题分类</Text>
-        <ScrollView className='index__categories' scrollX enableFlex>
-          <View
-            className={`index__cat-item ${activeCategory === null ? 'index__cat-item--active' : ''}`}
-            onClick={() => handleCategoryClick(null)}
-          >
-            <Text className='index__cat-emoji'>🍽️</Text>
-            <Text className='index__cat-label'>全部</Text>
-          </View>
-          {CATEGORY_LIST.map((cat) => (
-            <View
-              key={cat.key}
-              className={`index__cat-item ${activeCategory === cat.key ? 'index__cat-item--active' : ''}`}
-              onClick={() => handleCategoryClick(cat.key)}
-            >
-              <Text className='index__cat-emoji'>{CATEGORY_EMOJI[cat.key]}</Text>
-              <Text className='index__cat-label'>{cat.label}</Text>
-            </View>
-          ))}
-        </ScrollView>
-      </View>
-
-      {/* 热门菜谱 */}
-      <View className='index__section'>
-        <Text className='index__section-title'>
-          {activeCategory ? CATEGORY_LIST.find((c) => c.key === activeCategory)?.label : '热门推荐'} 🔥
+    <View className='page page--tab index'>
+      {/* M1-1 品牌头 */}
+      <View className='index__brand'>
+        <Text className='kicker'>{SITE_META.kicker}</Text>
+        <Text className='headline index__headline'>{SITE_META.headline}</Text>
+        <Text className='index__desc'>{SITE_META.description}</Text>
+        <Text className='meta index__count'>
+          共 {feed.length} 条记录 · 更新于 {SITE_META.updatedAt}
         </Text>
+      </View>
 
-        {loading ? (
-          <View className='index__skeleton-list'>
-            {[1, 2, 3].map((i) => (
-              <View key={i} className='index__skeleton-card' />
-            ))}
-          </View>
-        ) : hotRecipes.length === 0 ? (
-          <Empty text='暂无菜谱' subText='换个分类试试吧' />
+      {/* M1-2 / M1-3 Banner */}
+      <View className='index__section'>
+        <SectionTitle
+          title='本周精选'
+          right={`${pad(current + 1)} / ${pad(bannerItems.length)}`}
+        />
+        <BannerSwiper items={bannerItems} onTap={handleTap} onCurrentChange={setCurrent} />
+      </View>
+
+      {/* M1-4 / M1-5 瀑布流 */}
+      <View className='index__section'>
+        <SectionTitle title='全部记录' right={`共 ${waterfallItems.length} 条`} />
+        <Text className='index__legend'>菜品 / 一餐 · 两种内容共用同一张卡片</Text>
+        {waterfallItems.length > 0 ? (
+          <MasonryFeed items={waterfallItems} onTap={handleTap} />
         ) : (
-          <View className='index__recipe-grid'>
-            {hotRecipes.map((recipe) => (
-              <RecipeCard key={recipe.id} recipe={recipe} layout='card' />
-            ))}
-          </View>
-        )}
-
-        {!loading && loadingMore && (
-          <Text className='index__loading-more'>加载中…</Text>
-        )}
-        {!loading && !hasMore && hotRecipes.length > 0 && (
-          <Text className='index__no-more'>— 已经到底啦 —</Text>
+          <EmptyHint text='还没有更多记录' subText='前 5 条已全部收进本周精选' />
         )}
       </View>
-    </ScrollView>
+
+      <Text className='footer-note'>{SITE_META.footer}</Text>
+    </View>
   )
 }
 

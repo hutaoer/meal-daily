@@ -1,0 +1,11 @@
+.color-block {
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

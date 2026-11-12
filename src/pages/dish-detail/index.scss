@@ -1,0 +1,175 @@
+@import '../../styles/tokens';
+
+.dish-detail {
+  &__hero {
+    position: relative;
+  }
+
+  &__hero-note {
+    position: absolute;
+    left: 32rpx;
+    bottom: 32rpx;
+    font-size: 22rpx;
+    color: #FCEFE4;
+  }
+
+  &__like {
+    position: absolute;
+    right: 32rpx;
+    top: 32rpx;
+    z-index: 2;
+  }
+
+  &__body {
+    padding: 0 32rpx;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44rpx;
+  }
+
+  &__title {
+    margin: 16rpx 0 12rpx;
+  }
+
+  &__subtitle {
+    font-size: 26rpx;
+    line-height: 42rpx;
+    color: $c-text-sub;
+  }
+
+  &__meta-bar {
+    background: $c-group;
+    border-radius: $radius-block;
+    padding: 24rpx;
+    margin-top: 36rpx;
+  }
+
+  &__meta-text {
+    font-size: 24rpx;
+    color: $c-text-sub;
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 28rpx;
+  }
+
+  &__tag {
+    background: $c-tag-bg;
+    border-radius: 24rpx;
+    padding: 12rpx 20rpx;
+    margin: 0 16rpx 16rpx 0;
+  }
+
+  &__tag-text {
+    font-size: 22rpx;
+    color: $c-dish;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44rpx;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20rpx;
+  }
+
+  &__paragraph {
+    font-size: 26rpx;
+    line-height: 48rpx;
+    color: $c-text-sub;
+    margin-top: 20rpx;
+  }
+
+  &__ingredients {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+    padding: 12rpx 24rpx;
+    border-radius: $radius-row;
+    background: $c-row;
+  }
+
+  &__ing-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16rpx 0;
+    border-bottom: 1rpx solid $c-border;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__ing-name {
+    font-size: 26rpx;
+    color: $c-text;
+  }
+
+  &__ing-amount {
+    font-size: 26rpx;
+    color: $c-text-sub;
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+
+    > view {
+      margin-bottom: 20rpx;
+    }
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: row;
+    padding: 24rpx;
+    border-radius: $radius-block;
+    background: $c-row;
+  }
+
+  &__step-num {
+    font-size: 32rpx;
+    font-weight: 700;
+    color: $c-primary;
+    margin-right: 24rpx;
+    flex-shrink: 0;
+  }
+
+  &__step-desc {
+    flex: 1;
+    font-size: 24rpx;
+    line-height: 40rpx;
+    color: $c-text-sub;
+  }
+}
+
+.detail-missing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rpx 32rpx;
+
+  &__back {
+    margin-top: 40rpx;
+    padding: 20rpx 48rpx;
+    border-radius: 40rpx;
+    background: $c-primary;
+    color: $c-white;
+    font-size: 26rpx;
+  }
+}

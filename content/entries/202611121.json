@@ -1,0 +1,24 @@
+{
+  "id": "202611121",
+  "date": "2026.11.12",
+  "mealType": "晚餐",
+  "weekday": "周四",
+  "title": "【录入示例】雨夜的一碗热汤面",
+  "subtitle": "来自 content/ 目录 · 改 JSON 即可替换",
+  "coverKey": "warm-orange",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crghkqWFYIlvrXY2pTsZz0eFYfOEzq6qkKHpIlH2GTQycfXyjyibG6XOnItylMn2vQ8HiasKAUuIvz9Yvj1QUib9YDoz2qyRibAGhFqA/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "totalMinutes": 25,
+  "servings": 1,
+  "tags": ["示例", "录入演示", "一人食"],
+  "note": [
+    "下班时下了雨，进门只想吃一碗带汤的。烧水、下面、卧一个蛋，再抓一把小青菜丢进去，前后不到二十分钟。",
+    "顺手拍了拍桌上的水汽。这条是用来演示静态数据录入的示例：它躺在本文件里，同步之后就成了首页 Banner 的第一张。"
+  ],
+  "dishIds": ["d011", "d008"],
+  "likeCount": 3,
+  "feed": {
+    "meta": "11.12 · 晚餐 · 2 道菜",
+    "tags": ["录入示例", "一人食"],
+    "coverHeight": 340
+  }
+}

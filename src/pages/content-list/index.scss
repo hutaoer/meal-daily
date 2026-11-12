@@ -1,0 +1,41 @@
+@import '../../styles/tokens';
+
+.content-list {
+  padding: 32rpx 32rpx 60rpx;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24rpx;
+  }
+
+  &__headline {
+    margin: 12rpx 0 12rpx;
+  }
+
+  &__desc {
+    font-size: 22rpx;
+    line-height: 36rpx;
+    color: $c-text-sub;
+  }
+
+  &__count {
+    margin-top: 12rpx;
+  }
+
+  &__hint {
+    display: block;
+    font-size: 22rpx;
+    color: $c-meal;
+    margin: 32rpx 0 24rpx;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+
+    > view {
+      margin-bottom: 24rpx;
+    }
+  }
+}

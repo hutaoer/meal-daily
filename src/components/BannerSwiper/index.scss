@@ -1,0 +1,40 @@
+@import '../../styles/tokens';
+
+.banner {
+  &__swiper {
+    height: 424rpx;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__dots {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20rpx;
+  }
+
+  &__dot {
+    width: 12rpx;
+    height: 12rpx;
+    border-radius: 6rpx;
+    background: #D6C8AE;
+    margin-right: 12rpx;
+    transition: width 0.2s;
+
+    &--active {
+      width: 32rpx;
+      background: $c-primary;
+    }
+  }
+
+  &__hint {
+    display: block;
+    margin-top: 12rpx;
+    font-size: 20rpx;
+    color: $c-text-weak;
+  }
+}

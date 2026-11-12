@@ -1,8 +1,8 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "meal-daily",
-  "description": "每日的美食",
-  "appid": "touristappid",
+  "projectname": "林小厨家常食记",
+  "description": "林小厨家常食记 · 个人家常菜分享",
+  "appid": "wx6851faae0a253c39",
   "setting": {
     "urlCheck": true,
     "es6": false,

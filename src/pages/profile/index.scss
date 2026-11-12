@@ -1,187 +1,146 @@
-@import '../../app.scss';
+@import '../../styles/tokens';
 
 .profile {
-  min-height: 100vh;
-  background: $color-bg;
+  padding: 32rpx 32rpx 60rpx;
 
-  // ── 头部 ──────────────────────────────────
-  &__header {
-    background: linear-gradient(135deg, $color-primary 0%, #FF8C4A 100%);
-    padding: $space-xl $space-md $space-xl;
+  // 个人信息卡：暖橙渐变
+  &__card {
     display: flex;
+    flex-direction: column;
+    padding: 40rpx;
+    border-radius: $radius-lg;
+    background: linear-gradient(135deg, #C96440 0%, #994029 100%);
+  }
+
+  &__identity {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: $space-lg;
   }
 
-  &__avatar-wrap {
+  &__avatar-btn {
+    width: 136rpx;
+    height: 136rpx;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 68rpx;
+    background: rgba(255, 255, 255, 0.92);
+    line-height: normal;
+    overflow: hidden;
     flex-shrink: 0;
+
+    &::after {
+      border: none;
+    }
   }
 
-  &__avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.3);
+  &__avatar-img {
+    width: 136rpx;
+    height: 136rpx;
+    border-radius: 68rpx;
   }
 
-  &__user-info {
+  &__avatar-default {
+    position: relative;
+    width: 136rpx;
+    height: 136rpx;
+    overflow: hidden;
+  }
+
+  &__avatar-head {
+    position: absolute;
+    top: 28rpx;
+    left: 51rpx;
+    width: 34rpx;
+    height: 34rpx;
+    border-radius: 17rpx;
+    background: #D9B587;
+  }
+
+  &__avatar-body {
+    position: absolute;
+    top: 68rpx;
+    left: 30rpx;
+    width: 76rpx;
+    height: 76rpx;
+    border-radius: 38rpx;
+    background: #D9B587;
+  }
+
+  &__identity-info {
     flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 28rpx;
   }
 
   &__nickname {
-    display: block;
-    font-size: $font-xl;
+    font-size: 40rpx;
     font-weight: 700;
-    color: $color-white;
-    margin-bottom: $space-xs;
+    color: $c-white;
+    height: 56rpx;
+    line-height: 56rpx;
+    padding: 0;
   }
 
-  &__sub {
-    font-size: $font-sm;
-    color: rgba(255, 255, 255, 0.8);
+  &__nickname-placeholder {
+    color: $c-white;
   }
 
-  &__login-area {
-    flex: 1;
+  &__auth-hint {
+    font-size: 22rpx;
+    line-height: 34rpx;
+    color: #FCEFE4;
+    margin-top: 12rpx;
   }
 
-  &__login-hint {
-    display: block;
-    font-size: $font-md;
-    color: rgba(255, 255, 255, 0.85);
-    margin-bottom: $space-sm;
-  }
-
-  &__login-btn {
-    display: inline-block;
-    background: $color-white;
-    border-radius: $radius-full;
-    padding: $space-sm $space-lg;
-
-    &:active {
-      opacity: 0.85;
-    }
-  }
-
-  &__login-btn-text {
-    font-size: $font-md;
-    font-weight: 600;
-    color: $color-primary;
-  }
-
-  // ── 快捷操作 ───────────────────────────────
-  &__quick-actions {
+  &__stats {
     display: flex;
-    background: $color-card;
-    border-bottom: 1px solid $color-border;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 28rpx;
+    padding: 24rpx 0;
+    border-radius: $radius-block;
+    background: rgba(255, 255, 255, 0.18);
   }
 
-  &__quick-item {
-    flex: 1;
+  &__stat {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: $space-md;
-    position: relative;
-    transition: background 0.15s;
-
-    &:active {
-      background: $color-bg;
-    }
-
-    &:not(:last-child) {
-      border-right: 1px solid $color-border;
-    }
   }
 
-  &__quick-icon {
-    font-size: 48px;
-    margin-bottom: 4px;
+  &__stat-num {
+    font-size: 36rpx;
+    font-weight: 700;
+    color: $c-white;
   }
 
-  &__quick-label {
-    font-size: $font-sm;
-    color: $color-text-sub;
+  &__stat-label {
+    font-size: 20rpx;
+    color: #FCEFE4;
+    margin-top: 4rpx;
   }
 
-  &__badge {
-    position: absolute;
-    top: $space-sm;
-    right: $space-md;
-    min-width: 32px;
-    height: 32px;
-    border-radius: $radius-full;
-    background: $color-primary;
-    color: $color-white;
-    font-size: $font-xs;
-    line-height: 32px;
-    text-align: center;
-    padding: 0 8px;
+  &__card-note {
+    font-size: 20rpx;
+    color: #F3D9C8;
+    margin-top: 28rpx;
   }
 
-  // ── Tabs ──────────────────────────────────
-  &__tabs {
+  &__section {
+    margin-top: 48rpx;
+  }
+
+  &__rows {
     display: flex;
-    background: $color-card;
-    border-bottom: 2px solid $color-border;
-    margin-top: $space-sm;
-  }
+    flex-direction: column;
+    margin-top: 20rpx;
 
-  &__tab {
-    flex: 1;
-    text-align: center;
-    padding: $space-md;
-    font-size: $font-md;
-    color: $color-text-sub;
-    border-bottom: 3px solid transparent;
-    transition: all 0.15s;
-
-    &--active {
-      color: $color-primary;
-      font-weight: 600;
-      border-bottom-color: $color-primary;
+    > view {
+      margin-bottom: 20rpx;
     }
-  }
-
-  // ── 内容 ──────────────────────────────────
-  &__content {
-    padding: $space-md;
-  }
-
-  &__recipe-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: $space-md;
-  }
-
-  &__loading {
-    display: block;
-    text-align: center;
-    padding: $space-xl;
-    color: $color-text-sub;
-    font-size: $font-md;
-  }
-
-  // ── 底部 ──────────────────────────────────
-  &__footer {
-    padding: $space-xl $space-md;
-  }
-
-  &__logout-btn {
-    background: $color-card;
-    border-radius: $radius-md;
-    padding: $space-md;
-    text-align: center;
-    border: 1px solid $color-border;
-
-    &:active {
-      opacity: 0.7;
-    }
-  }
-
-  &__logout-text {
-    font-size: $font-md;
-    color: $color-danger;
   }
 }

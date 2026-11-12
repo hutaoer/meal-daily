@@ -1,163 +1,160 @@
-import React, { useEffect, useState } from 'react'
-import { View, Text, Image, ScrollView } from '@tarojs/components'
-import Taro from '@tarojs/taro'
-import { useUserStore } from '../../store/useUserStore'
-import { useRecipeStore } from '../../store/useRecipeStore'
-import { getMyRecipes, getRecipeById } from '../../services/recipe.service'
-import RecipeCard from '../../components/business/RecipeCard'
-import Empty from '../../components/common/Empty'
-import type { Recipe } from '../../types/recipe'
+import React, { useState } from 'react'
+import { View, Text, Button, Image, Input } from '@tarojs/components'
+import Taro, { useDidShow } from '@tarojs/taro'
+// 组件 import 顺序与其他页面保持一致，避免各页 CSS 抽取顺序冲突
+import LikedRow from '../../components/LikedRow'
+import SectionTitle from '../../components/SectionTitle'
+import EmptyHint from '../../components/EmptyHint'
+import { resolveLikedContents, resolveLikedDishes } from '../../services/mock'
+import { useLikes } from '../../store/useLikes'
 import './index.scss'
 
-type TabKey = 'upload' | 'favorite'
-
 const Profile: React.FC = () => {
-  const { userInfo, isLoggedIn, login, logout, loading } = useUserStore()
-  const { favorites } = useRecipeStore()
-  const [activeTab, setActiveTab] = useState<TabKey>('upload')
-  const [myRecipes, setMyRecipes] = useState<Recipe[]>([])
-  const [favoriteRecipes, setFavoriteRecipes] = useState<Recipe[]>([])
-  const [dataLoading, setDataLoading] = useState(false)
+  useDidShow(() => useLikes.getState().sync())
 
-  useEffect(() => {
-    if (!isLoggedIn || !userInfo) return
-    setDataLoading(true)
-    getMyRecipes(userInfo.openId).then((list) => {
-      setMyRecipes(list)
-      setDataLoading(false)
-    })
-  }, [isLoggedIn, userInfo])
+  const likedContentIds = useLikes((s) => s.likedContentIds)
+  const likedDishIds = useLikes((s) => s.likedDishIds)
+  const profile = useLikes((s) => s.profile)
+  const setProfile = useLikes((s) => s.setProfile)
 
-  useEffect(() => {
-    if (!isLoggedIn || favorites.length === 0) {
-      setFavoriteRecipes([])
-      return
-    }
-    Promise.all(favorites.map((id) => getRecipeById(id))).then((list) => {
-      setFavoriteRecipes(list.filter(Boolean) as Recipe[])
-    })
-  }, [isLoggedIn, favorites])
+  const [expanded, setExpanded] = useState({ dish: false, content: false })
 
-  const handleLogin = () => {
-    login()
-  }
+  const likedDishes = resolveLikedDishes(likedDishIds)
+  const likedContents = resolveLikedContents(likedContentIds)
+  const shownDishes = expanded.dish ? likedDishes : likedDishes.slice(0, 2)
+  const shownContents = expanded.content ? likedContents : likedContents.slice(0, 2)
 
-  const handleLogout = () => {
-    Taro.showModal({
-      title: '提示',
-      content: '确定要退出登录吗？',
-      success: ({ confirm }) => {
-        if (confirm) logout()
+  /** chooseAvatar 返回的是临时路径，必须 saveFile 到本地持久目录（PRD §5.6） */
+  const handleChooseAvatar = (e: { detail: { avatarUrl: string } }) => {
+    const tempFilePath = e.detail?.avatarUrl
+    if (!tempFilePath) return
+    const filePath = `${Taro.env.USER_DATA_PATH}/meal-avatar.png`
+    Taro.getFileSystemManager().saveFile({
+      tempFilePath,
+      filePath,
+      success: (res) => setProfile({ avatarUrl: res.savedFilePath }),
+      fail: () => {
+        setProfile({ avatarUrl: tempFilePath })
+        Taro.showToast({ title: '头像可能在重启后需重新选择', icon: 'none' })
       },
     })
   }
 
-  const handleUpload = () => {
-    if (!isLoggedIn) {
-      Taro.showToast({ title: '请先登录', icon: 'none' })
-      return
-    }
-    Taro.navigateTo({ url: '/pages/recipe-upload/index' })
+  const handleNicknameBlur = (e: { detail: { value: string } }) => {
+    const value = (e.detail?.value || '').trim()
+    if (value !== profile.nickName) setProfile({ nickName: value })
   }
 
+  const dishRight = likedDishes.length > 2
+    ? (expanded.dish
+      ? `共 ${likedDishes.length} 道 · 收起 ›`
+      : `近 2 / ${likedDishes.length} 道 · 查看全部 ›`)
+    : `共 ${likedDishes.length} 道`
+
+  const contentRight = likedContents.length > 2
+    ? (expanded.content
+      ? `共 ${likedContents.length} 条 · 收起 ›`
+      : `近 2 / ${likedContents.length} 条 · 查看全部 ›`)
+    : `共 ${likedContents.length} 条`
+
   return (
-    <ScrollView className='profile' scrollY>
-      {/* 个人信息头部 */}
-      <View className='profile__header'>
-        <View className='profile__avatar-wrap'>
-          <Image
-            className='profile__avatar'
-            src={userInfo?.avatarUrl || 'https://api.dicebear.com/7.x/fun-emoji/svg?seed=default'}
-            mode='aspectFill'
-          />
+    <View className='page page--tab profile'>
+      {/* M4-1 个人信息卡 */}
+      <View className='profile__card'>
+        <View className='profile__identity'>
+          <Button
+            className='profile__avatar-btn'
+            openType='chooseAvatar'
+            onChooseAvatar={handleChooseAvatar}
+          >
+            {profile.avatarUrl ? (
+              <Image className='profile__avatar-img' src={profile.avatarUrl} mode='aspectFill' />
+            ) : (
+              <View className='profile__avatar-default'>
+                <View className='profile__avatar-head' />
+                <View className='profile__avatar-body' />
+              </View>
+            )}
+          </Button>
+          <View className='profile__identity-info'>
+            <Input
+              className='profile__nickname'
+              type={'nickname' as any}
+              value={profile.nickName}
+              placeholder='林小厨'
+              placeholderClass='profile__nickname-placeholder'
+              onBlur={handleNicknameBlur}
+            />
+            <Text className='profile__auth-hint'>点击头像更换 · 微信授权填写</Text>
+          </View>
         </View>
-        {isLoggedIn ? (
-          <View className='profile__user-info'>
-            <Text className='profile__nickname'>{userInfo?.nickName}</Text>
-            <Text className='profile__sub'>欢迎来到每日带饭 🍱</Text>
+
+        {/* M4-2 喜欢统计 */}
+        <View className='profile__stats'>
+          <View className='profile__stat'>
+            <Text className='profile__stat-num'>{likedContentIds.length}</Text>
+            <Text className='profile__stat-label'>喜欢的内容</Text>
+          </View>
+          <View className='profile__stat'>
+            <Text className='profile__stat-num'>{likedDishIds.length}</Text>
+            <Text className='profile__stat-label'>喜欢的菜品</Text>
+          </View>
+        </View>
+
+        {/* M4-3 存储说明 */}
+        <Text className='profile__card-note'>头像与昵称仅保存在本机，不上传服务器</Text>
+      </View>
+
+      {/* M4-4 喜欢的菜品 */}
+      <View className='profile__section'>
+        <SectionTitle
+          title='喜欢的菜品'
+          right={dishRight}
+          onRight={() => setExpanded((prev) => ({ ...prev, dish: !prev.dish }))}
+        />
+        {likedDishes.length > 0 ? (
+          <View className='profile__rows'>
+            {shownDishes.map((dish) => (
+              <LikedRow
+                key={dish.id}
+                item={dish}
+                kind='dish'
+                onTap={(id) => Taro.navigateTo({ url: `/pages/dish-detail/index?id=${id}` })}
+              />
+            ))}
           </View>
         ) : (
-          <View className='profile__login-area'>
-            <Text className='profile__login-hint'>登录后查看更多内容</Text>
-            <View className='profile__login-btn' onClick={handleLogin}>
-              <Text className='profile__login-btn-text'>{loading ? '登录中…' : '微信快捷登录'}</Text>
-            </View>
-          </View>
+          <EmptyHint text='还没有喜欢的菜品' subText='去菜品列表点个爱心吧' />
         )}
       </View>
 
-      {/* 快捷功能 */}
-      <View className='profile__quick-actions'>
-        <View className='profile__quick-item' onClick={handleUpload}>
-          <Text className='profile__quick-icon'>📤</Text>
-          <Text className='profile__quick-label'>上传菜谱</Text>
-        </View>
-        <View className='profile__quick-item' onClick={() => setActiveTab('favorite')}>
-          <Text className='profile__quick-icon'>⭐</Text>
-          <Text className='profile__quick-label'>我的收藏</Text>
-          {favorites.length > 0 && <Text className='profile__badge'>{favorites.length}</Text>}
-        </View>
-        <View className='profile__quick-item' onClick={() => setActiveTab('upload')}>
-          <Text className='profile__quick-icon'>📝</Text>
-          <Text className='profile__quick-label'>我的发布</Text>
-          {myRecipes.length > 0 && <Text className='profile__badge'>{myRecipes.length}</Text>}
-        </View>
+      {/* M4-5 喜欢的内容 */}
+      <View className='profile__section'>
+        <SectionTitle
+          title='喜欢的内容'
+          right={contentRight}
+          onRight={() => setExpanded((prev) => ({ ...prev, content: !prev.content }))}
+        />
+        {likedContents.length > 0 ? (
+          <View className='profile__rows'>
+            {shownContents.map((content) => (
+              <LikedRow
+                key={content.id}
+                item={content}
+                kind='content'
+                onTap={(id) => Taro.navigateTo({ url: `/pages/meal-detail/index?id=${id}` })}
+              />
+            ))}
+          </View>
+        ) : (
+          <EmptyHint text='还没有喜欢的内容' subText='去内容列表点个爱心吧' />
+        )}
       </View>
 
-      {/* Tab 切换 */}
-      {isLoggedIn && (
-        <View className='profile__tabs'>
-          <View
-            className={`profile__tab ${activeTab === 'upload' ? 'profile__tab--active' : ''}`}
-            onClick={() => setActiveTab('upload')}
-          >
-            我的发布 ({myRecipes.length})
-          </View>
-          <View
-            className={`profile__tab ${activeTab === 'favorite' ? 'profile__tab--active' : ''}`}
-            onClick={() => setActiveTab('favorite')}
-          >
-            我的收藏 ({favoriteRecipes.length})
-          </View>
-        </View>
-      )}
-
-      {/* 内容区域 */}
-      {isLoggedIn ? (
-        <View className='profile__content'>
-          {dataLoading ? (
-            <Text className='profile__loading'>加载中…</Text>
-          ) : activeTab === 'upload' ? (
-            myRecipes.length === 0 ? (
-              <Empty icon='📝' text='还没有发布菜谱' subText='点击「上传菜谱」分享你的拿手菜' />
-            ) : (
-              <View className='profile__recipe-grid'>
-                {myRecipes.map((r) => <RecipeCard key={r.id} recipe={r} layout='card' />)}
-              </View>
-            )
-          ) : (
-            favoriteRecipes.length === 0 ? (
-              <Empty icon='⭐' text='还没有收藏菜谱' subText='去首页找找喜欢的菜谱吧' />
-            ) : (
-              <View className='profile__recipe-grid'>
-                {favoriteRecipes.map((r) => <RecipeCard key={r.id} recipe={r} layout='card' />)}
-              </View>
-            )
-          )}
-        </View>
-      ) : (
-        <Empty icon='🔐' text='登录后查看更多内容' />
-      )}
-
-      {/* 退出登录 */}
-      {isLoggedIn && (
-        <View className='profile__footer'>
-          <View className='profile__logout-btn' onClick={handleLogout}>
-            <Text className='profile__logout-text'>退出登录</Text>
-          </View>
-        </View>
-      )}
-    </ScrollView>
+      <Text className='footer-note'>
+        全部数据仅存本机（Storage）· 清除小程序数据后会重置
+      </Text>
+    </View>
   )
 }
 
