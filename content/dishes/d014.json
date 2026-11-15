@@ -1,0 +1,38 @@
+{
+  "id": "d014",
+  "title": "糖醋排骨",
+  "description": "酸甜挂汁，孩子最爱",
+  "subtitle": "一勺糖一勺醋，裹住每块肋排",
+  "coverKey": "terracotta",
+  "coverImgUrl": "",
+  "images": ["terracotta", "tomato-red", "wheat-gold"],
+  "category": "家常菜",
+  "tags": ["宴客", "酸甜", "经典"],
+  "duration": 45,
+  "difficulty": "中等",
+  "servings": 2,
+  "date": "2026.11.14",
+  "story": [
+    "糖醋汁的口诀是「一酒二酱三糖四醋五水」，不过家常做记住糖和醋差不多 1:1，先尝再收汁最稳。",
+    "排骨先煮去血沫再煎到金黄，挂汁才亮。"
+  ],
+  "ingredients": [
+    { "name": "猪肋排", "amount": "500 g" },
+    { "name": "冰糖", "amount": "30 g" },
+    { "name": "香醋", "amount": "2 勺" },
+    { "name": "生抽", "amount": "1 勺" },
+    { "name": "料酒", "amount": "1 勺" },
+    { "name": "姜", "amount": "2 片" }
+  ],
+  "steps": [
+    { "index": 1, "description": "排骨冷水加料酒焯水，捞出冲净。" },
+    { "index": 2, "description": "锅中少油下冰糖小火炒到枣红色，下排骨翻裹糖色。" },
+    { "index": 3, "description": "加生抽、醋、姜片和水没过排骨，大火烧开转小火焖 30 分钟。" },
+    { "index": 4, "description": "开大火收汁到浓稠挂亮，出锅前再淋半勺醋提香。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.14 · 45 分钟 · 中等",
+    "coverHeight": 320
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "d018",
+  "title": "泡姜牛肉丝",
+  "description": "酸辣下饭，牛肉丝滑嫩",
+  "subtitle": "泡姜泡椒一爆，整盘都是下饭的味道",
+  "coverKey": "chili",
+  "coverImgUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/Fr1CT25crgjzTVdPQnUGelyM9C78fwaUGgsJ77G4JhhqtvyLdMx6Cz05VBB1BBC7ibpib7YCt22MxMkOWnqdVWuicV2x34my6MkT8ar2GGZ1Ww/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["chili", "tomato-red", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "下饭", "川味"],
+  "duration": 20,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.15",
+  "story": [
+    "泡姜牛肉丝是最费米饭的一道小炒。泡姜的酸香和泡椒的辣一钻进油锅，整盘都是下饭的味道，牛肉丝要嫩，全靠逆纹切和封浆。",
+    "牛肉丝先滑油再回锅，别在锅里恋战，老了就柴。这口味道重在一个「快」字：料头爆香、肉一变色就出锅，酸辣鲜才出得来。"
+  ],
+  "ingredients": [
+    { "name": "牛里脊", "amount": "250 g" },
+    { "name": "泡姜", "amount": "1 块" },
+    { "name": "泡椒", "amount": "3 根" },
+    { "name": "芹菜（或蒜苗）", "amount": "2 根" },
+    { "name": "蒜", "amount": "2 瓣" },
+    { "name": "生抽 / 料酒", "amount": "各 1 勺（腌肉）" },
+    { "name": "淀粉", "amount": "1 勺（腌肉）" },
+    { "name": "食用油", "amount": "适量" },
+    { "name": "盐 / 糖", "amount": "少许" }
+  ],
+  "steps": [
+    { "index": 1, "description": "牛肉逆纹切细丝，加生抽、料酒、淀粉抓匀，再淋一勺油封浆，腌 10 分钟。" },
+    { "index": 2, "description": "泡姜、泡椒切丝，芹菜切段，蒜切片。" },
+    { "index": 3, "description": "热锅宽油，下牛肉丝大火滑散到刚变色，立刻盛出。" },
+    { "index": 4, "description": "底油爆香泡姜、泡椒、蒜片，下芹菜炒断生，倒回牛肉丝，加盐、糖翻匀出锅。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.15 · 20 分钟 · 简单",
+    "coverHeight": 300
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "d015",
+  "title": "清炒西蓝花",
+  "description": "翠绿爽口，解腻必备",
+  "subtitle": "焯水再过油，颜色才绿得发亮",
+  "coverKey": "leaf-green",
+  "coverImgUrl": "",
+  "images": ["leaf-green", "sage", "oat"],
+  "category": "清爽素菜",
+  "tags": ["少油", "快手", "解腻"],
+  "duration": 8,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.14",
+  "story": [
+    "大鱼大肉一桌，总得有个清爽的。西蓝花过一遍盐水再炒，颜色能绿一整餐。",
+    "别炒太久，塌了就出水还发黄。"
+  ],
+  "ingredients": [
+    { "name": "西蓝花", "amount": "1 颗" },
+    { "name": "蒜", "amount": "2 瓣" },
+    { "name": "盐", "amount": "适量" },
+    { "name": "油", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "西蓝花掰小朵，盐水泡十分钟冲洗干净。" },
+    { "index": 2, "description": "沸水加几滴油和盐，焯 30 秒捞出过凉。" },
+    { "index": 3, "description": "热油爆香蒜片，下西蓝花大火快炒，加盐翻匀出锅。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.14 · 8 分钟 · 简单",
+    "coverHeight": 300
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "d017",
+  "title": "肥肠芋儿鸡",
+  "description": "软糯入味，连汤都想泡饭",
+  "subtitle": "肥肠耙软、芋儿一抿就化，鸡肉吸饱了红汤",
+  "coverKey": "terracotta",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crgjU2tQoyHUxVUhYIrol3mffqW97fjoH03WI124RGbibK9qzb69TJtEx9uB7Lt735VEumicqn16Wh9O18MPT4mzFYC8BjrCxTvxfs/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["terracotta", "chili", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "下饭", "川味"],
+  "duration": 90,
+  "difficulty": "中等",
+  "servings": 2,
+  "date": "2026.11.15",
+  "story": [
+    "肥肠芋儿鸡是重庆那边的家常菜，一盆端上来还咕嘟着，肥肠耙软、芋儿一抿就化，鸡肉吸饱了红汤，连汤汁都想拌两碗饭。",
+    "最费功夫的是洗肥肠：里外都要用面粉和醋反复抓，再焯水去味，不然一锅都毁了。芋儿选小个的芋艿，烧到筷子一扎就透，粉糯还不碎。"
+  ],
+  "ingredients": [
+    { "name": "猪肥肠", "amount": "400 g" },
+    { "name": "小芋儿（芋艿）", "amount": "300 g" },
+    { "name": "鸡腿肉", "amount": "300 g" },
+    { "name": "郫县豆瓣酱", "amount": "1 勺" },
+    { "name": "姜 / 蒜", "amount": "适量" },
+    { "name": "花椒 / 干辣椒", "amount": "少许" },
+    { "name": "生抽 / 老抽", "amount": "各 1 勺" },
+    { "name": "料酒", "amount": "1 勺" },
+    { "name": "盐 / 糖", "amount": "适量" },
+    { "name": "面粉 + 醋（洗肥肠用）", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "肥肠翻面，用面粉和醋反复抓洗去黏液，清水冲净；冷水加料酒焯水，捞出切滚刀块。" },
+    { "index": 2, "description": "鸡腿肉切块焯水；芋儿去皮切滚刀块，泡清水防变色。" },
+    { "index": 3, "description": "热油下姜蒜、花椒、干辣椒爆香，加豆瓣酱炒出红油。" },
+    { "index": 4, "description": "下肥肠和鸡块翻炒上色，加生抽、老抽、糖和没过食材的热水，大火烧开转小火烧 30 分钟。" },
+    { "index": 5, "description": "放芋儿继续烧 20 分钟到软糯，加盐调味，大火略收汁即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.15 · 90 分钟 · 中等",
+    "coverHeight": 320
+  }
+}

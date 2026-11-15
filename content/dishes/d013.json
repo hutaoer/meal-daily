@@ -1,0 +1,35 @@
+{
+  "id": "d013",
+  "title": "外婆菜炒蛋",
+  "description": "咸香开胃，米饭杀手",
+  "subtitle": "腌菜炒蛋，一口就想起外婆的味道",
+  "coverKey": "wheat-gold",
+  "coverImgUrl": "",
+  "images": ["wheat-gold", "oat", "sage"],
+  "category": "家常菜",
+  "tags": ["下饭", "快手", "家常"],
+  "duration": 10,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.14",
+  "story": [
+    "外婆菜是湖南一带的腌菜，咸酸带点辣，和鸡蛋最配。懒得做菜的时候，一碟腌菜、两个蛋就能救场。",
+    "蛋液里少放点盐，外婆菜本身够咸，重了会发苦。"
+  ],
+  "ingredients": [
+    { "name": "外婆菜（腌菜）", "amount": "1 包" },
+    { "name": "鸡蛋", "amount": "3 个" },
+    { "name": "小葱", "amount": "1 根" },
+    { "name": "油", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "鸡蛋打散，加一点点盐；外婆菜挤掉多余水分切碎。" },
+    { "index": 2, "description": "热油先炒蛋到刚凝固盛出。" },
+    { "index": 3, "description": "底油下外婆菜炒香，倒回鸡蛋翻匀，撒葱花出锅。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.14 · 10 分钟 · 简单",
+    "coverHeight": 300
+  }
+}

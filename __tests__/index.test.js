@@ -55,7 +55,11 @@ describe('content/ 静态录入通道（见 content/README.md、PRD §14）', ()
     expect(meal).toBeDefined()
     expect(meal.dishIds).toEqual(['d011', 'd008'])
     expect(findDish('d011')).toBeDefined()
-    expect(sortedContents()[0].id).toBe('202611121')
+    const mealIds = sortedContents().map((c) => c.id)
+    expect(mealIds).toContain('202611121')
+    expect(mealIds).toContain('202611141')
+    // 按 id 数值降序，最新的午餐（202611141）排在最前
+    expect(mealIds[0]).toBe('202611141')
   })
 
   test('录入内容生成的 FeedItem 与内置卡片同结构', () => {

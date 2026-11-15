@@ -1,0 +1,37 @@
+{
+  "id": "d016",
+  "title": "鹿茸菇排骨汤",
+  "description": "鲜掉眉毛的一锅",
+  "subtitle": "鹿茸菇的鲜，全炖进排骨汤里",
+  "coverKey": "oat",
+  "coverImgUrl": "",
+  "images": ["oat", "sage", "wheat-gold"],
+  "category": "汤羹",
+  "tags": ["煲汤", "鲜味", "家常"],
+  "duration": 60,
+  "difficulty": "简单",
+  "servings": 3,
+  "date": "2026.11.14",
+  "story": [
+    "鹿茸菇也叫荷叶菇，菌柄细长、口感脆嫩，和排骨是绝配。一锅下去，汤头又鲜又甜。",
+    "排骨先飞水，汤才清；菌菇别太早放，最后半小时下锅最鲜。"
+  ],
+  "ingredients": [
+    { "name": "猪肋排", "amount": "400 g" },
+    { "name": "鹿茸菇", "amount": "1 把" },
+    { "name": "姜", "amount": "2 片" },
+    { "name": "盐", "amount": "适量" },
+    { "name": "枸杞", "amount": "少许（可选）" }
+  ],
+  "steps": [
+    { "index": 1, "description": "排骨冷水下锅焯去血沫，温水冲净。" },
+    { "index": 2, "description": "排骨、姜片入锅加足量水，大火烧开转小火炖 40 分钟。" },
+    { "index": 3, "description": "鹿茸菇洗净撕小，下锅再炖 20 分钟。" },
+    { "index": 4, "description": "出锅前加盐，撒几粒枸杞即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.14 · 60 分钟 · 简单",
+    "coverHeight": 320
+  }
+}

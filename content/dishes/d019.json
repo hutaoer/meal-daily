@@ -1,0 +1,41 @@
+{
+  "id": "d019",
+  "title": "姜母鸭",
+  "description": "姜香浓郁，暖身又下饭",
+  "subtitle": "麻油老姜慢煸，鸭肉软嫩，天冷最馋这一锅",
+  "coverKey": "terracotta",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crggqopCDXaQuezCMiakUIia4qsVTI9nNwQRPw7HBcI7Q39wdicDrrkN6CU3GgYrPubBGnWaMobicgGIeKH5zic9g3GNwzfMPoq321y40/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["terracotta", "chili", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "下饭", "姜香"],
+  "duration": 90,
+  "difficulty": "中等",
+  "servings": 2,
+  "date": "2026.11.15",
+  "story": [
+    "姜母鸭是闽南和台湾一带的温补名菜，一锅端上来咕嘟咕嘟冒着泡，麻油和老姜的香气先把人勾住。天冷的时候炖上一锅，连汤带肉吃下去，浑身都暖了。",
+    "这道菜姜要多、煸要透：老姜切厚片，用小火慢煸到边缘微卷、香气逼出来，鸭肉才不腥。全程用米酒和水同烧，不另外加清水，味道才醇厚。"
+  ],
+  "ingredients": [
+    { "name": "鸭腿 / 半番鸭", "amount": "半只（约 600 g）" },
+    { "name": "老姜", "amount": "1 大块" },
+    { "name": "黑芝麻油", "amount": "2 勺" },
+    { "name": "米酒", "amount": "300 ml" },
+    { "name": "生抽 / 老抽", "amount": "各 1 勺" },
+    { "name": "冰糖", "amount": "1 勺" },
+    { "name": "枸杞", "amount": "少许（可选）" },
+    { "name": "盐", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "鸭子剁块，冷水下锅焯去血沫，捞出冲净沥干；老姜切厚片。" },
+    { "index": 2, "description": "砂锅倒黑芝麻油，小火下姜片慢煸到边缘微卷、香气出来。" },
+    { "index": 3, "description": "下鸭块中火翻炒到表皮收紧微黄，加生抽、老抽、冰糖翻匀上色。" },
+    { "index": 4, "description": "倒入米酒和少许热水没过鸭块，大火烧开转小火加盖炖 60 分钟。" },
+    { "index": 5, "description": "鸭肉软烂后加盐调味，撒枸杞，开大火略收汁即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.15 · 90 分钟 · 中等",
+    "coverHeight": 320
+  }
+}
