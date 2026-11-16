@@ -1,0 +1,39 @@
+{
+  "id": "d035",
+  "title": "凉拌黄瓜",
+  "description": "清爽脆嫩，开胃解腻",
+  "subtitle": "拍碎的黄瓜拌上蒜香辣椒油，几分钟搞定的下酒小菜",
+  "coverKey": "sage",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crgh8HwxuibT9ibNjr1HC1YKBCiaLlWdfiaWcuGkTsyWzHEU8efVgPyY5rAEkmdPic2pcJb8mtyjhP6sSAdUbibPO4UTsd3q2wTXKah77c/0?wxfrom=12&wx_fmt=jpg&tp=webp&watermark=1",
+  "images": ["sage", "leaf-green", "oat"],
+  "category": "凉菜",
+  "tags": ["凉菜", "快手", "下酒"],
+  "duration": 10,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "凉拌黄瓜是夏天最不能少的一道小菜。黄瓜用刀拍碎，断面参差更入味，拌上蒜末、辣椒油和香醋，冰一下再吃，脆生生的，一口下去暑气全消。",
+    "小技巧：黄瓜要拍不要切，拍出来的断面粗糙更容易挂住调料；拌之前先撒一点盐腌 5 分钟杀出多余水分，挤干再拌，口感更脆也不会出水塌掉。"
+  ],
+  "ingredients": [
+    { "name": "黄瓜", "amount": "2 根" },
+    { "name": "蒜", "amount": "4 瓣" },
+    { "name": "辣椒油", "amount": "1 勺" },
+    { "name": "香醋 / 生抽", "amount": "各 1 勺" },
+    { "name": "盐 / 糖", "amount": "少许" },
+    { "name": "香油", "amount": "几滴" },
+    { "name": "熟芝麻", "amount": "少许" }
+  ],
+  "steps": [
+    { "index": 1, "description": "黄瓜洗净，用刀拍碎成段，加少许盐腌 5 分钟，挤干水分。" },
+    { "index": 2, "description": "蒜切末，和黄瓜一起放入碗中。" },
+    { "index": 3, "description": "加生抽、香醋、糖、辣椒油、香油，抓拌均匀。" },
+    { "index": 4, "description": "撒熟芝麻，冷藏 10 分钟更入味，取出即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 10 分钟 · 简单",
+    "coverHeight": 280
+  }
+}

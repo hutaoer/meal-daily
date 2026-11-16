@@ -1,0 +1,29 @@
+{
+  "id": "d0XX",
+  "title": "菜名（用户给，不改）",
+  "description": "一句话，列表卡片用",
+  "subtitle": "详情页里稍长的一句介绍",
+  "coverKey": "chili",
+  "coverImgUrl": "https://...（用户给，不改）",
+  "images": ["chili", "terracotta", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "下饭"],
+  "duration": 20,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "YYYY.MM.DD",
+  "story": ["第一段手记。", "第二段，带一条做菜技巧。"],
+  "ingredients": [
+    { "name": "主料", "amount": "1 份" },
+    { "name": "调料", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "第一步。" },
+    { "index": 2, "description": "第二步。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "MM.DD · 20 分钟 · 简单",
+    "coverHeight": 300
+  }
+}

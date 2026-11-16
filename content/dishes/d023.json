@@ -1,0 +1,39 @@
+{
+  "id": "d023",
+  "title": "牛肉鱼丸锅仔",
+  "description": "咕嘟咕嘟，一锅暖到胃里",
+  "subtitle": "牛肉先炖软，下鱼丸和蔬菜，小火慢滚越煮越鲜",
+  "coverKey": "warm-orange",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crghkqWFYIlvrXY2pTsZz0eFYfOEzq6qkKHpIlH2GTQycfXyjyibG6XOnItylMn2vQ8HiasKAUuIvz9Yvj1QUib9YDoz2qyRibAGhFqA/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["warm-orange", "terracotta", "oat"],
+  "category": "汤羹",
+  "tags": ["汤羹", "暖胃", "家常"],
+  "duration": 35,
+  "difficulty": "中等",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "天冷的时候就爱这种咕嘟咕嘟的锅仔。牛肉先炖到软烂，再下鱼丸和青菜，小火慢慢滚着，端上桌还冒着泡，连汤带肉吃一碗，整个人都暖了。",
+    "小技巧：牛肉用牛腩，冷水下锅焯去血沫再炖，汤才清；鱼丸后放，煮到浮起就好，煮久了会老。最后丢一把青菜，烫软就关火。"
+  ],
+  "ingredients": [
+    { "name": "牛腩", "amount": "300 g" },
+    { "name": "鱼丸", "amount": "8 个" },
+    { "name": "青菜 / 娃娃菜", "amount": "1 把" },
+    { "name": "姜 / 葱", "amount": "适量" },
+    { "name": "生抽 / 老抽", "amount": "各 1 勺" },
+    { "name": "料酒", "amount": "1 勺" },
+    { "name": "盐", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "牛腩切块，冷水下锅加姜片、料酒焯水，捞出洗净。" },
+    { "index": 2, "description": "牛肉放回锅里，加没过的水、生抽、老抽、姜片，大火烧开转小火炖 25 分钟至软烂。" },
+    { "index": 3, "description": "下鱼丸，煮到浮起（约 3 分钟），加盐调味。" },
+    { "index": 4, "description": "放青菜烫软，连汤一起倒进锅仔，小火保温上桌即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 35 分钟 · 中等",
+    "coverHeight": 320
+  }
+}

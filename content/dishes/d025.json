@@ -1,0 +1,39 @@
+{
+  "id": "d025",
+  "title": "芦笋炒牛肉",
+  "description": "脆嫩爽口，牛肉滑嫩",
+  "subtitle": "牛肉逆纹切丝封浆，芦笋快炒，翠绿配红亮",
+  "coverKey": "leaf-green",
+  "coverImgUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/Fr1CT25crgjj6rNHibHJOTmELAHAA23PJaIAbN1NNlaDBr9CZPXCLm0km8MVo20q9usQJ44FZJg9EA8TFTmLaiaymXjfSDK5dh9VnwnRO3GG8/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["leaf-green", "sage", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "快手", "清淡"],
+  "duration": 15,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "芦笋炒牛肉讲究一个「快」字。牛肉逆纹切丝、封浆滑嫩，芦笋焯水去涩，大火翻匀就出锅，脆的脆、嫩的嫩。",
+    "小技巧：牛肉丝用生抽、淀粉、少许油抓匀封浆，炒出来才不老；芦笋先在开水里烫 30 秒过凉，颜色更绿也更脆，下锅翻炒几下即可。"
+  ],
+  "ingredients": [
+    { "name": "牛里脊 / 牛腿肉", "amount": "200 g" },
+    { "name": "芦笋", "amount": "1 把" },
+    { "name": "蒜", "amount": "3 瓣" },
+    { "name": "生抽", "amount": "1 勺" },
+    { "name": "淀粉", "amount": "1 勺" },
+    { "name": "盐 / 糖", "amount": "少许" },
+    { "name": "食用油", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "牛肉逆纹切丝，加生抽、淀粉、少许油抓匀封浆，腌 10 分钟；芦笋去老根切斜段。" },
+    { "index": 2, "description": "烧一锅开水，芦笋烫 30 秒捞出过凉，沥干备用。" },
+    { "index": 3, "description": "热锅凉油下牛肉丝大火滑散，炒到变色立即盛出。" },
+    { "index": 4, "description": "底油爆香蒜末，下芦笋翻炒，倒回牛肉丝，加盐、糖大火翻匀即可出锅。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 15 分钟 · 简单",
+    "coverHeight": 300
+  }
+}

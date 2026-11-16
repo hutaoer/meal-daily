@@ -1,0 +1,39 @@
+{
+  "id": "d034",
+  "title": "春笋炖五花肉",
+  "description": "春笋鲜甜，肉香四溢",
+  "subtitle": "春笋和五花肉一起慢炖，笋吸油、肉解腻，一锅鲜",
+  "coverKey": "leaf-green",
+  "coverImgUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/Fr1CT25crgjou3P6j14eBvS6TT4Mk0MqvibFws0ibufiaPcbxuRsq2Obgs8DzFLpuZSYVatLZ8noxll5gCwTa9jtVM1K0cDAgibicExt5JlkFiaTM/0?wxfrom=12&wx_fmt=jpg&tp=webp&watermark=1",
+  "images": ["leaf-green", "terracotta", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "下饭", "时令"],
+  "duration": 50,
+  "difficulty": "中等",
+  "servings": 3,
+  "date": "2026.11.16",
+  "story": [
+    "春笋和五花肉是春天里最搭的一对。笋子吸饱了肉的油脂，鲜甜脆嫩；五花肉被笋解了腻，炖到软糯，一锅端上桌，连汤都想泡饭吃。",
+    "小技巧：春笋要先焯水去涩，切滚刀块更容易入味；五花肉先煸出多余油脂再炖，汤色清亮不油腻；炖够 40 分钟，笋和肉的味道才会真正融到一起。"
+  ],
+  "ingredients": [
+    { "name": "五花肉", "amount": "400 g" },
+    { "name": "春笋", "amount": "2 根" },
+    { "name": "姜 / 葱", "amount": "适量" },
+    { "name": "生抽 / 老抽", "amount": "各 1 勺" },
+    { "name": "料酒", "amount": "1 勺" },
+    { "name": "糖 / 盐", "amount": "少许" },
+    { "name": "葱花", "amount": "少许" }
+  ],
+  "steps": [
+    { "index": 1, "description": "春笋去皮切滚刀块，开水焯 3 分钟去涩，捞出过凉；五花肉切块。" },
+    { "index": 2, "description": "五花肉下锅煸出油脂，加姜片、生抽、老抽、料酒、糖翻炒上色。" },
+    { "index": 3, "description": "加没过的水，大火烧开转小火炖 30 分钟。" },
+    { "index": 4, "description": "下春笋继续炖 15 分钟至入味，加盐调味，大火收汁，撒葱花出锅。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 50 分钟 · 中等",
+    "coverHeight": 320
+  }
+}

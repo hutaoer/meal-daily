@@ -1,0 +1,39 @@
+{
+  "id": "d027",
+  "title": "簸箕板",
+  "description": "客家米香，软滑咸香",
+  "subtitle": "米浆蒸成薄皮，裹上时蔬馅，浇一勺葱油豉油",
+  "coverKey": "wheat-gold",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crggT47EGY5JP2fyRJ1Dgev97I41tztZCweyoPJgCXpcQwoS1gNIOFicS2PicpZaezg7wNWlxOueQibNPq9IyicKM2XjaarY9nOm0yX4/0?wxfrom=12&wx_fmt=jpg&tp=webp&watermark=1",
+  "images": ["wheat-gold", "oat", "sage"],
+  "category": "主食",
+  "tags": ["客家", "主食", "小吃"],
+  "duration": 25,
+  "difficulty": "中等",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "簸箕板是客家的一道传统米食，把米浆舀在刷了油的平盘里蒸熟，揭下来就是一张软滑的米皮，卷上炒香的时蔬馅，浇葱油豉油，一口咬下去米香裹着菜香。",
+    "小技巧：米浆要调得像浓牛奶一样，盘底刷薄油才好揭皮；馅料用豆芽、笋丝、香菇、虾米炒香最经典，蒸的时间别太长，米皮老了就不软滑了。"
+  ],
+  "ingredients": [
+    { "name": "粘米粉 / 大米", "amount": "1 碗（磨浆或直接用粉）" },
+    { "name": "绿豆芽", "amount": "1 把" },
+    { "name": "笋丝 / 香菇", "amount": "各 1 小把" },
+    { "name": "虾米", "amount": "少许" },
+    { "name": "蒜 / 葱", "amount": "适量" },
+    { "name": "蒸鱼豉油 / 生抽", "amount": "2 勺" },
+    { "name": "食用油 / 盐", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "大米泡软磨成米浆（或粘米粉加水调成浓牛奶状），加少许盐搅匀；平盘刷一层薄油。" },
+    { "index": 2, "description": "舀一勺米浆倒入平盘晃匀，水开后上锅蒸 1 分钟至米皮凝固起泡，趁热揭下。" },
+    { "index": 3, "description": "虾米、香菇、笋丝、豆芽下锅炒香，加盐调味成馅料。" },
+    { "index": 4, "description": "米皮铺上馅料卷起切段，淋蒸鱼豉油，浇一勺烧热的葱油激香即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 25 分钟 · 中等",
+    "coverHeight": 300
+  }
+}

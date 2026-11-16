@@ -1,0 +1,40 @@
+{
+  "id": "d021",
+  "title": "烤鱼",
+  "description": "外焦里嫩，越煮越入味",
+  "subtitle": "腌好的鱼先烤后炖，配菜吸满汤汁，一盆端上桌",
+  "coverKey": "chili",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crgia2r9Bh2oTOP8QVwiajScQQMBuA05jZQGA0QrIMtpsjePZiciaibjEdEzGaxTvT4keCXJCfdlUfRMKFaxOs9LRup4q9n2XjsHuUMTw/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["chili", "terracotta", "oat"],
+  "category": "下饭菜",
+  "tags": ["硬菜", "下饭", "聚餐"],
+  "duration": 40,
+  "difficulty": "中等",
+  "servings": 3,
+  "date": "2026.11.16",
+  "story": [
+    "烤鱼的灵魂在最后那十几分钟的咕嘟。鱼先腌透、烤到表皮发脆，再连汤带配菜倒进烤盘，小火慢炖，汤汁收浓了就一锅端上桌。",
+    "小技巧：腌鱼时用一点料酒和盐抹匀，肚子里塞姜片去腥；烤之前把鱼擦干，表皮才会脆。配菜选吸汤的——魔芋、豆皮、藕片，最后放进去煮两分钟最入味。"
+  ],
+  "ingredients": [
+    { "name": "草鱼 / 鲈鱼", "amount": "1 条（约 750 g）" },
+    { "name": "洋葱", "amount": "半个" },
+    { "name": "藕片 / 魔芋 / 豆皮", "amount": "各 1 小盘" },
+    { "name": "姜 / 蒜 / 干辣椒", "amount": "适量" },
+    { "name": "豆瓣酱", "amount": "1 勺" },
+    { "name": "生抽 / 料酒", "amount": "各 1 勺" },
+    { "name": "盐 / 糖", "amount": "适量" },
+    { "name": "食用油", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "鱼处理干净，两面划刀，用料酒、盐抹匀，肚子塞姜片，腌 20 分钟。" },
+    { "index": 2, "description": "烤箱 220℃ 预热，鱼擦干刷油，烤 15 分钟至表皮微焦。" },
+    { "index": 3, "description": "炒锅爆香姜蒜、干辣椒，下豆瓣酱炒出红油，加生抽、糖和一碗水煮开。" },
+    { "index": 4, "description": "烤盘里铺洋葱和配菜，放上烤鱼，倒入汤汁，烤箱 200℃ 再烤 10 分钟即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 40 分钟 · 中等",
+    "coverHeight": 320
+  }
+}

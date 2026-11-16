@@ -1,0 +1,39 @@
+{
+  "id": "d028",
+  "title": "干菜蒸五花肉",
+  "description": "肥而不腻，干菜吸满肉香",
+  "subtitle": "五花肉煸香垫底，干菜铺上面蒸透，咸鲜下饭",
+  "coverKey": "terracotta",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crghmdYTe5icgzfIEgP1r1IUmH7QgFP6YPSiafhITKTneLJSf7t3gsus5y2AjOthtAwib6icLYmNKz7wqBsMibALhXxnskA6RHibewLyUA/0?wxfrom=12&wx_fmt=jpg&tp=webp&watermark=1",
+  "images": ["terracotta", "warm-orange", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "下饭", "蒸菜"],
+  "duration": 60,
+  "difficulty": "中等",
+  "servings": 3,
+  "date": "2026.11.16",
+  "story": [
+    "干菜蒸五花肉是梅菜扣肉的家常简化版，不用炸、不用扣，五花肉煸出油，和泡发的干菜一层一层码好上锅蒸，肉的油渗进干菜，干菜的咸香又回润到肉里。",
+    "小技巧：五花肉先下锅煸出多余油脂，吃起来才不腻；干菜要提前泡软洗去泥沙，蒸的时间够长（至少 40 分钟）肉才会软糯，出锅前撒一把葱花。"
+  ],
+  "ingredients": [
+    { "name": "五花肉", "amount": "400 g" },
+    { "name": "梅干菜 / 干菜", "amount": "1 把" },
+    { "name": "姜 / 蒜", "amount": "适量" },
+    { "name": "生抽 / 老抽", "amount": "各 1 勺" },
+    { "name": "料酒", "amount": "1 勺" },
+    { "name": "糖 / 盐", "amount": "少许" },
+    { "name": "葱花", "amount": "少许" }
+  ],
+  "steps": [
+    { "index": 1, "description": "干菜提前泡软，反复洗去泥沙，挤干切碎；五花肉切薄片。" },
+    { "index": 2, "description": "五花肉下锅小火煸出油脂，加姜蒜、生抽、老抽、料酒、糖翻炒上色。" },
+    { "index": 3, "description": "碗底铺一层煸好的五花肉，上面铺满干菜，再淋少许炒肉的汤汁。" },
+    { "index": 4, "description": "上锅大火蒸 40 分钟至肉软糯，倒扣到盘里，撒葱花即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 60 分钟 · 中等",
+    "coverHeight": 320
+  }
+}

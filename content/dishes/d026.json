@@ -1,0 +1,39 @@
+{
+  "id": "d026",
+  "title": "猪肝瘦肉汤",
+  "description": "鲜嫩不腥，一碗暖身",
+  "subtitle": "猪肝滑嫩、瘦肉清甜，姜丝去腥，滚一滚就好",
+  "coverKey": "warm-orange",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crgjyKg0CC0uXYhcwnJMwIeRoy57NonJd2dBopUcY52n3f2hbg0qAKk5icJ5WPWHJ9Rq4icZAazvMTO1lcbrPngYRFEJU4jMjS1Hico/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["warm-orange", "oat", "sage"],
+  "category": "汤羹",
+  "tags": ["汤羹", "快手", "清淡"],
+  "duration": 15,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "猪肝瘦肉汤是最快手的一道暖汤，十来分钟就能端上桌。猪肝处理得干净就不腥，切薄片用淀粉抓一抓，滚水里一烫立刻捞，嫩得入口即化。",
+    "小技巧：猪肝要多换几次水泡出血水，下锅前用料酒、淀粉抓匀封浆；汤里多放姜丝和白胡椒去腥，出锅淋几滴香油，撒葱花最香。"
+  ],
+  "ingredients": [
+    { "name": "猪肝", "amount": "150 g" },
+    { "name": "瘦肉", "amount": "100 g" },
+    { "name": "姜", "amount": "1 小块" },
+    { "name": "葱花", "amount": "少许" },
+    { "name": "料酒 / 淀粉", "amount": "各 1 勺" },
+    { "name": "盐 / 白胡椒", "amount": "少许" },
+    { "name": "香油", "amount": "几滴" }
+  ],
+  "steps": [
+    { "index": 1, "description": "猪肝切薄片，多换几次水泡出血水；瘦肉切薄片，分别加料酒、淀粉、少许盐抓匀腌 5 分钟；姜切丝。" },
+    { "index": 2, "description": "锅里烧水，放姜丝，水开后先下瘦肉片搅散，煮到变色。" },
+    { "index": 3, "description": "下猪肝片，大火烫 30 秒至变色熟透，立即关火。" },
+    { "index": 4, "description": "加盐、白胡椒调味，淋香油，撒葱花即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 15 分钟 · 简单",
+    "coverHeight": 300
+  }
+}

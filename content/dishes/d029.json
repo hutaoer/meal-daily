@@ -1,0 +1,39 @@
+{
+  "id": "d029",
+  "title": "笋干蒸五花肉",
+  "description": "笋干脆嫩，肉香浓郁",
+  "subtitle": "笋干泡发垫底，五花肉铺上面蒸，山珍遇上红烧肉",
+  "coverKey": "sage",
+  "coverImgUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/Fr1CT25crgjlTP1lOBfSSgTr8eUMP0bxWy8PobBq8e8FFJXA9egj0kaKPYeWG8jYCC01B7n9pH0j3dtNPpS87nL4YDaN7wyAa5EPRPCgYCA/0?wxfrom=12&wx_fmt=jpg&tp=webp&watermark=1",
+  "images": ["sage", "terracotta", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "下饭", "蒸菜"],
+  "duration": 70,
+  "difficulty": "中等",
+  "servings": 3,
+  "date": "2026.11.16",
+  "story": [
+    "笋干吸饱了肉的汤汁，咬下去脆中带韧，满口都是鲜；五花肉被蒸得软糯，油脂渗进笋干里，一点都不腻，是山珍和肉最朴素也最下饭的组合。",
+    "小技巧：笋干要提前半天泡软，中途换几次水，泡透了蒸出来才不硬、不涩；五花肉先煸出多余油脂再蒸，口感更清爽，蒸够 50 分钟肉才会软糯。"
+  ],
+  "ingredients": [
+    { "name": "五花肉", "amount": "400 g" },
+    { "name": "笋干", "amount": "1 把（提前泡发）" },
+    { "name": "姜 / 蒜", "amount": "适量" },
+    { "name": "生抽 / 老抽", "amount": "各 1 勺" },
+    { "name": "料酒", "amount": "1 勺" },
+    { "name": "糖 / 盐", "amount": "少许" },
+    { "name": "葱花", "amount": "少许" }
+  ],
+  "steps": [
+    { "index": 1, "description": "笋干提前泡软泡透，撕成条切段；五花肉切薄片。" },
+    { "index": 2, "description": "五花肉下锅煸出油脂，加姜蒜、生抽、老抽、料酒、糖翻炒上色。" },
+    { "index": 3, "description": "碗底铺笋干，上面码好五花肉，淋少许炒肉的汤汁。" },
+    { "index": 4, "description": "上锅大火蒸 50 分钟至肉软糯、笋干入味，倒扣装盘，撒葱花即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 70 分钟 · 中等",
+    "coverHeight": 320
+  }
+}

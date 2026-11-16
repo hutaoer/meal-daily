@@ -1,0 +1,39 @@
+{
+  "id": "d024",
+  "title": "烤鸡翅",
+  "description": "皮脆肉嫩，啃着停不下来",
+  "subtitle": "腌够味再进烤箱，蜜汁焦香，一盘端上桌秒光",
+  "coverKey": "wheat-gold",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crggT4k3bVzXibJm7DasndN0DoO7eM3osibVRyhW6hAu8cGRszcYavyLo8hmdtptulKWRhibNZL06T3KmUUPv3E9n4qBDLnzFhbAibds/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["wheat-gold", "terracotta", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "烤箱", "下酒"],
+  "duration": 35,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "烤鸡翅是烤箱入门的第一道菜，几乎不会失败。鸡翅腌透了进烤箱，中途刷一层蜂蜜，烤到表皮焦黄起皱，咬一口汁还锁在里面。",
+    "小技巧：腌之前用牙签在鸡翅上扎几下更入味，腌至少 20 分钟；烤箱先高温 200℃ 烤 15 分钟，再转 180℃ 刷蜜烤 5 分钟上色，表皮才会脆而不糊。"
+  ],
+  "ingredients": [
+    { "name": "鸡翅中", "amount": "10 个" },
+    { "name": "生抽 / 老抽", "amount": "各 1 勺" },
+    { "name": "料酒", "amount": "1 勺" },
+    { "name": "蜂蜜", "amount": "1 勺" },
+    { "name": "姜 / 蒜", "amount": "适量" },
+    { "name": "盐 / 黑胡椒", "amount": "少许" },
+    { "name": "食用油", "amount": "少许" }
+  ],
+  "steps": [
+    { "index": 1, "description": "鸡翅洗净两面划刀，用牙签扎几下，加生抽、老抽、料酒、姜蒜、盐、黑胡椒抓匀，腌 20 分钟以上。" },
+    { "index": 2, "description": "烤箱 200℃ 预热，鸡翅刷薄油摆进烤盘，烤 15 分钟。" },
+    { "index": 3, "description": "取出刷一层蜂蜜，翻面再刷，转 180℃ 烤 5 分钟至上色。" },
+    { "index": 4, "description": "再翻回正面烤 2 分钟至表皮焦脆，出炉撒少许熟芝麻即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 35 分钟 · 简单",
+    "coverHeight": 300
+  }
+}

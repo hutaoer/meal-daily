@@ -1,0 +1,40 @@
+{
+  "id": "d032",
+  "title": "酸菜鱼",
+  "description": "酸辣开胃，鱼片嫩滑",
+  "subtitle": "酸菜熬出酸香汤底，鱼片下锅一烫就熟，连汤喝都鲜",
+  "coverKey": "wheat-gold",
+  "coverImgUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/Fr1CT25crghibMPsGvgIpITTU3ZvwqKoL7Vibl7RT0rgTgdqjuHPQviaSg24yRdfl5KNIZkDdaEQMC7l9jbJLOPtaPx1Dia1EicaYZFKznTJ3Ux8/0?wxfrom=12&wx_fmt=jpg&tp=webp&watermark=1",
+  "images": ["wheat-gold", "sage", "oat"],
+  "category": "下饭菜",
+  "tags": ["下饭菜", "酸辣", "川菜"],
+  "duration": 25,
+  "difficulty": "中等",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "酸菜鱼的精华在那锅酸汤。酸菜先炒香再加水熬出味，鱼片用蛋清淀粉抓嫩，下锅一烫就熟，嫩滑得筷子都夹不稳，酸辣的汤底拌饭能多吃一碗。",
+    "小技巧：鱼片要逆纹切薄片，用蛋清、淀粉、少许盐抓匀封浆，汤开后再下，烫到变色立刻关火，煮久了就老；最后浇一勺热油激香花椒和干辣椒，香味一下就出来了。"
+  ],
+  "ingredients": [
+    { "name": "草鱼 / 黑鱼", "amount": "1 条（约 750 g）" },
+    { "name": "酸菜", "amount": "1 包" },
+    { "name": "蛋清", "amount": "1 个" },
+    { "name": "淀粉", "amount": "1 勺" },
+    { "name": "姜 / 蒜 / 干辣椒", "amount": "适量" },
+    { "name": "花椒", "amount": "少许" },
+    { "name": "盐 / 糖 / 料酒", "amount": "适量" },
+    { "name": "食用油", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "鱼肉逆纹切薄片，加蛋清、淀粉、盐、料酒抓匀腌 10 分钟；鱼骨留着熬汤。" },
+    { "index": 2, "description": "酸菜切段，下锅炒干水汽出香味，加水和鱼骨熬 10 分钟成酸汤，捞去鱼骨。" },
+    { "index": 3, "description": "汤开后下鱼片，大火烫到变色（约 1 分钟），加盐、糖调味，连汤倒入碗中。" },
+    { "index": 4, "description": "鱼片上放干辣椒、花椒、蒜末，浇一勺烧热的油激香即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 25 分钟 · 中等",
+    "coverHeight": 320
+  }
+}

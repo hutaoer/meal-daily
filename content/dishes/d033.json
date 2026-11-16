@@ -1,0 +1,40 @@
+{
+  "id": "d033",
+  "title": "魔芋烧鸡",
+  "description": "魔芋吸饱汤汁，鸡肉入味",
+  "subtitle": "鸡块烧到入味，下魔芋同煮，弹牙的魔芋比肉还香",
+  "coverKey": "terracotta",
+  "coverImgUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Fr1CT25crgiavgShcb9GFOOazHdWvbHq6s9llzmuaKHb0AZlfey1DTWkgic0XP6RVchm5ktKAeL5CTuY14emNEVU4HSbJTlGXfcmCafJVea1k/0?wxfrom=12&wx_fmt=jpg&tp=webp&watermark=1",
+  "images": ["terracotta", "chili", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "下饭", "川味"],
+  "duration": 30,
+  "difficulty": "中等",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "魔芋烧鸡是川渝家常的下饭神器。鸡块炒出红油，加水烧到入味，再下魔芋同煮，弹牙的魔芋吸饱了鸡肉和辣油的汤汁，咬下去一口爆汁，往往比肉还先被抢光。",
+    "小技巧：鸡肉先用热油煸到表皮收紧再下调料，香气更足；魔芋要提前焯水去碱味，最后下锅煮几分钟就行，煮久了会失去弹牙的口感。"
+  ],
+  "ingredients": [
+    { "name": "鸡腿 / 半只鸡", "amount": "约 500 g" },
+    { "name": "魔芋", "amount": "1 盒" },
+    { "name": "姜 / 蒜 / 干辣椒", "amount": "适量" },
+    { "name": "豆瓣酱", "amount": "1 勺" },
+    { "name": "生抽 / 老抽", "amount": "各 1 勺" },
+    { "name": "料酒", "amount": "1 勺" },
+    { "name": "盐 / 糖", "amount": "少许" },
+    { "name": "葱花", "amount": "少许" }
+  ],
+  "steps": [
+    { "index": 1, "description": "鸡肉剁块，冷水下锅加姜片、料酒焯水，捞出洗净；魔芋切片焯水去碱味。" },
+    { "index": 2, "description": "热锅下鸡块煸到表皮收紧，加姜蒜、干辣椒、豆瓣酱炒出红油。" },
+    { "index": 3, "description": "加生抽、老抽、糖和没过鸡肉的水，大火烧开转小火烧 15 分钟。" },
+    { "index": 4, "description": "下魔芋煮 5 分钟入味，加盐调味，大火收汁，撒葱花出锅。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 30 分钟 · 中等",
+    "coverHeight": 320
+  }
+}

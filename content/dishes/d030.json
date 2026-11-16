@@ -1,0 +1,39 @@
+{
+  "id": "d030",
+  "title": "瘦肉海鲜粉",
+  "description": "汤鲜粉滑，一碗满足",
+  "subtitle": "瘦肉海鲜熬汤底，米粉吸饱汤汁，鲜美又顶饱",
+  "coverKey": "warm-orange",
+  "coverImgUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/Fr1CT25crgjhAGicgK5VROfGOD6OQas7jDSk3icRibrUJfT2j1yxibicelzymlK1TGpxX2NqVicTcQBrp5keMyrHNUSeIyFSqbOKHtoiaEdFMujibdE/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["warm-orange", "sage", "oat"],
+  "category": "主食",
+  "tags": ["主食", "海鲜", "快手"],
+  "duration": 20,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "瘦肉海鲜粉是家常版的鲜汤米粉，用瘦肉和虾、花蛤熬出一锅奶白的汤底，米粉在汤里一滚，吸饱了鲜，连汤带粉吃下去，从胃暖到心。",
+    "小技巧：瘦肉切薄片用淀粉抓一抓，煮出来才嫩；海鲜先下锅煮出鲜味再下米粉，米粉别煮太久，太软就不弹了；出锅撒白胡椒和葱花，鲜得掉眉毛。"
+  ],
+  "ingredients": [
+    { "name": "米粉 / 河粉", "amount": "2 人份" },
+    { "name": "瘦肉", "amount": "150 g" },
+    { "name": "鲜虾 / 花蛤", "amount": "各 1 小盘" },
+    { "name": "青菜", "amount": "1 把" },
+    { "name": "姜 / 葱", "amount": "适量" },
+    { "name": "淀粉 / 料酒", "amount": "各 1 勺" },
+    { "name": "盐 / 白胡椒", "amount": "少许" }
+  ],
+  "steps": [
+    { "index": 1, "description": "瘦肉切薄片，加淀粉、料酒、少许盐抓匀腌 5 分钟；鲜虾剪须，花蛤吐沙洗净。" },
+    { "index": 2, "description": "锅里烧水放姜片，水开后下鲜虾、花蛤煮 2 分钟出鲜味。" },
+    { "index": 3, "description": "下瘦肉片搅散，再下米粉煮 2 分钟，放青菜烫软。" },
+    { "index": 4, "description": "加盐、白胡椒调味，撒葱花即可。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 20 分钟 · 简单",
+    "coverHeight": 300
+  }
+}

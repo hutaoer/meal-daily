@@ -1,0 +1,40 @@
+{
+  "id": "d020",
+  "title": "小炒鸡",
+  "description": "干香下饭，越嚼越香",
+  "subtitle": "剁小快炒，辣椒干香，一锅米饭见了底",
+  "coverKey": "chili",
+  "coverImgUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/Fr1CT25crgjrciaaLO0Zl6LiblCicn9Ph3icehx1icpqmWabMrWwVXUBv0HfPZDXvwV68JLNWxDdDZff0iccicwmiahGo0BGzr1gEmxcVWtv3JIsmxU/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1",
+  "images": ["chili", "terracotta", "oat"],
+  "category": "下饭菜",
+  "tags": ["家常", "下饭", "湘菜"],
+  "duration": 25,
+  "difficulty": "简单",
+  "servings": 2,
+  "date": "2026.11.16",
+  "story": [
+    "小炒鸡是湖南人的家常杀手锏，鸡块剁得小小的，和辣椒一起大火快炒，干香扑鼻，端上桌没几分钟就能把一锅米饭扫光。",
+    "好吃的关键在一个「小」和一个「快」：鸡剁成指尖大小才进味，锅要烧到冒烟再下油，鸡块炒到微微发焦最香。辣椒用青线椒，辣得清爽不呛喉。"
+  ],
+  "ingredients": [
+    { "name": "三黄鸡 / 鸡腿肉", "amount": "半只（约 500 g）" },
+    { "name": "青线椒", "amount": "6 根" },
+    { "name": "小米辣（可选）", "amount": "2 根" },
+    { "name": "姜 / 蒜", "amount": "适量" },
+    { "name": "生抽 / 老抽", "amount": "各 1 勺" },
+    { "name": "料酒", "amount": "1 勺" },
+    { "name": "盐 / 糖", "amount": "适量" },
+    { "name": "食用油", "amount": "适量" }
+  ],
+  "steps": [
+    { "index": 1, "description": "鸡肉剁成指尖大小的块，加生抽、料酒抓匀腌 10 分钟；青线椒、小米辣切圈，姜蒜切末。" },
+    { "index": 2, "description": "锅烧到微微冒烟，倒油下鸡块大火快炒，炒到鸡块收紧、边缘微焦，盛出。" },
+    { "index": 3, "description": "底油爆香姜蒜末，下青线椒、小米辣翻炒出辣味。" },
+    { "index": 4, "description": "倒回鸡块，加老抽、糖、盐大火翻匀，炒到酱汁收干裹满鸡块即可出锅。" }
+  ],
+  "likeCount": 0,
+  "feed": {
+    "meta": "11.16 · 25 分钟 · 简单",
+    "coverHeight": 300
+  }
+}
