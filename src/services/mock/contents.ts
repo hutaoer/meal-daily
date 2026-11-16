@@ -133,6 +133,24 @@ const baseContents: ContentItem[] = [
     dishIds: ['d007', 'd004', 'd009', 'd010', 'd005'],
     likeCount: 47,
   },
+  {
+    id: '202606261',
+    date: '2026.06.26',
+    mealType: '晚餐',
+    weekday: '周六',
+    title: '父亲来杭州了，接风洗尘，简单一餐',
+    subtitle: '慢一点的周六，做了三道想吃很久的家常菜',
+    coverKey: 'terracotta',
+    totalMinutes: 60,
+    servings: 2,
+    tags: ['家常', '川菜'],
+    note: [
+      '父亲来杭州了，老婆准备了一桌好菜。晚上陪父亲喝一杯。',
+      '家常菜：酸菜鱼、凉拌黄瓜、魔芋烧鸡、春笋炖五花肉'
+    ],
+    dishIds: ['d032', 'd035', 'd033', 'd034'],
+    likeCount: 12,
+  },
 ]
 
 /** 对外数据 = content/ 录入的一餐 + 内置 7 条；列表按 id 数值降序展示 */

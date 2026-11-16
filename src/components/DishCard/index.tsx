@@ -3,6 +3,7 @@ import { View, Text } from '@tarojs/components'
 import ColorBlock from '../ColorBlock'
 import LikeButton from '../LikeButton'
 import type { Dish } from '../../types/content'
+import { formatShortDate } from '../../utils/date'
 import './index.scss'
 
 interface Props {
@@ -26,7 +27,7 @@ const DishCard: React.FC<Props> = ({ dish, liked, count, onTap, onLike }) => (
       <Text className='dish-card__title'>{dish.title}</Text>
       <Text className='dish-card__desc ellipsis-2'>{dish.description}</Text>
       <Text className={`dish-card__meta ${liked ? 'dish-card__meta--liked' : ''}`}>
-        {dish.id} · {count} 人喜欢{liked ? ' · 已喜欢' : ''}
+        {formatShortDate(dish.date)} · {count} 人喜欢{liked ? ' · 已喜欢' : ''}
       </Text>
     </View>
   </View>

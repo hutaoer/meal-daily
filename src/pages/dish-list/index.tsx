@@ -43,7 +43,7 @@ const DishList: React.FC = () => {
         <Text className='kicker'>一道一味 · 单独成卡</Text>
         <Text className='headline dish-list__headline'>全部菜品</Text>
         <Text className='dish-list__desc'>
-          每道菜有独立 id（d001…）、封面色块与一句话描述
+          每道菜有封面色块、一句话描述与记录日期
         </Text>
         <Text className='meta dish-list__count'>共 {dishes.length} 道 · 点击卡片进入菜品详情</Text>
       </View>
